@@ -1,0 +1,6605 @@
+version: 2
+
+sources:
+  - name: raw_dm_sap
+    database: DM_SAP
+    schema: Fakta
+    tables:
+      - name: AGR_USERS
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: AGR_NAME
+            data_type: nvarchar
+          - name: UNAME
+            data_type: nvarchar
+          - name: FROM_DAT
+            data_type: nvarchar
+          - name: FROM_DAT_dato
+            data_type: date
+          - name: TO_DAT
+            data_type: nvarchar
+          - name: TO_DAT_dato
+            data_type: date
+          - name: EXCLUDE
+            data_type: char
+          - name: CHANGE_DAT
+            data_type: nvarchar
+          - name: CHANGE_DAT_dato
+            data_type: date
+          - name: CHANGE_TIM
+            data_type: nvarchar
+          - name: CHANGE_TST
+            data_type: decimal
+          - name: ORG_FLAG
+            data_type: char
+          - name: COL_FLAG
+            data_type: char
+          - name: BUKRS
+            data_type: nvarchar
+      - name: ASSHR
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PDSNR
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: INFTY
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: ASSOB
+        columns: []
+      - name: CATSDB
+        columns: []
+      - name: CSKS
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: KOKRS
+            data_type: nvarchar
+          - name: KOSTL
+            data_type: nvarchar
+          - name: DATBI
+            data_type: nvarchar
+          - name: DATBI_dato
+            data_type: date
+          - name: DATAB
+            data_type: nvarchar
+          - name: DATAB_dato
+            data_type: date
+          - name: BKZKP
+            data_type: char
+          - name: PKZKP
+            data_type: char
+          - name: GSBER
+            data_type: nvarchar
+          - name: KOSAR
+            data_type: char
+          - name: VERAK
+            data_type: nvarchar
+          - name: VERAK_USER
+            data_type: nvarchar
+          - name: WAERS
+            data_type: nvarchar
+          - name: KALSM
+            data_type: nvarchar
+          - name: TXJCD
+            data_type: nvarchar
+          - name: PRCTR
+            data_type: nvarchar
+          - name: WERKS
+            data_type: nvarchar
+          - name: LOGSYSTEM
+            data_type: nvarchar
+          - name: ERSDA
+            data_type: nvarchar
+          - name: ERSDA_dato
+            data_type: date
+          - name: USNAM
+            data_type: nvarchar
+          - name: BKZKS
+            data_type: char
+          - name: BKZER
+            data_type: char
+          - name: BKZOB
+            data_type: char
+          - name: PKZKS
+            data_type: char
+          - name: PKZER
+            data_type: char
+          - name: VMETH
+            data_type: nvarchar
+          - name: MGEFL
+            data_type: char
+          - name: ABTEI
+            data_type: nvarchar
+          - name: NKOST
+            data_type: nvarchar
+          - name: KVEWE
+            data_type: char
+          - name: KAPPL
+            data_type: nvarchar
+          - name: KOSZSCHL
+            data_type: nvarchar
+          - name: LAND1
+            data_type: nvarchar
+          - name: ANRED
+            data_type: nvarchar
+          - name: NAME1
+            data_type: nvarchar
+          - name: NAME2
+            data_type: nvarchar
+          - name: NAME3
+            data_type: nvarchar
+          - name: NAME4
+            data_type: nvarchar
+          - name: ORT01
+            data_type: nvarchar
+          - name: ORT02
+            data_type: nvarchar
+          - name: STRAS
+            data_type: nvarchar
+          - name: PFACH
+            data_type: nvarchar
+          - name: PSTLZ
+            data_type: nvarchar
+          - name: PSTL2
+            data_type: nvarchar
+          - name: REGIO
+            data_type: nvarchar
+          - name: SPRAS
+            data_type: char
+          - name: TELBX
+            data_type: nvarchar
+          - name: TELF1
+            data_type: nvarchar
+          - name: TELF2
+            data_type: nvarchar
+          - name: TELFX
+            data_type: nvarchar
+          - name: TELTX
+            data_type: nvarchar
+          - name: TELX1
+            data_type: nvarchar
+          - name: DATLT
+            data_type: nvarchar
+          - name: DRNAM
+            data_type: nvarchar
+          - name: KHINR
+            data_type: nvarchar
+          - name: CCKEY
+            data_type: nvarchar
+          - name: KOMPL
+            data_type: char
+          - name: STAKZ
+            data_type: char
+          - name: OBJNR
+            data_type: nvarchar
+          - name: FUNKT
+            data_type: nvarchar
+          - name: AFUNK
+            data_type: nvarchar
+          - name: CPI_TEMPL
+            data_type: nvarchar
+          - name: CPD_TEMPL
+            data_type: nvarchar
+          - name: FUNC_AREA
+            data_type: nvarchar
+          - name: SCI_TEMPL
+            data_type: nvarchar
+          - name: SCD_TEMPL
+            data_type: nvarchar
+          - name: SKI_TEMPL
+            data_type: nvarchar
+          - name: SKD_TEMPL
+            data_type: nvarchar
+          - name: VNAME
+            data_type: nvarchar
+          - name: RECID
+            data_type: nvarchar
+          - name: ETYPE
+            data_type: nvarchar
+          - name: JV_OTYPE
+            data_type: nvarchar
+          - name: JV_JIBCL
+            data_type: nvarchar
+          - name: JV_JIBSA
+            data_type: nvarchar
+          - name: FERC_IND
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: HRP1000
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PLVAR
+            data_type: nvarchar
+          - name: OTYPE
+            data_type: nvarchar
+          - name: OBJID
+            data_type: nvarchar
+          - name: ISTAT
+            data_type: nchar
+          - name: BEGDA
+            data_type: nchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: ENDDA
+            data_type: nchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: LANGU
+            data_type: nchar
+          - name: SEQNR
+            data_type: nvarchar
+          - name: OTJID
+            data_type: nvarchar
+          - name: INFTY
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: REASN
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXNR
+            data_type: nvarchar
+          - name: SHORT
+            data_type: nvarchar
+          - name: STEXT
+            data_type: nvarchar
+          - name: GDATE
+            data_type: nvarchar
+          - name: GDATE_dato
+            data_type: date
+          - name: MC_SHORT
+            data_type: nvarchar
+          - name: MC_STEXT
+            data_type: nvarchar
+          - name: MC_SEARK
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: HRP1001
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nchar
+          - name: OTYPE
+            data_type: nchar
+          - name: OBJID
+            data_type: nchar
+          - name: PLVAR
+            data_type: nchar
+          - name: RSIGN
+            data_type: char
+          - name: RELAT
+            data_type: nchar
+          - name: ISTAT
+            data_type: char
+          - name: PRIOX
+            data_type: nchar
+          - name: BEGDA
+            data_type: nchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: ENDDA
+            data_type: nchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: VARYF
+            data_type: nchar
+          - name: SEQNR
+            data_type: nchar
+          - name: INFTY
+            data_type: nchar
+          - name: OTJID
+            data_type: nchar
+          - name: SUBTY
+            data_type: nchar
+          - name: AEDTM
+            data_type: nchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nchar
+          - name: REASN
+            data_type: nchar
+          - name: HISTO
+            data_type: char
+          - name: ITXNR
+            data_type: nchar
+          - name: SCLAS
+            data_type: nchar
+          - name: SOBID
+            data_type: nchar
+          - name: PROZT
+            data_type: nchar
+          - name: ADATANR
+            data_type: nchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: HRP1051
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PLVAR
+            data_type: nvarchar
+          - name: OTYPE
+            data_type: nvarchar
+          - name: OBJID
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: ISTAT
+            data_type: char
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: VARYF
+            data_type: nvarchar
+          - name: SEQNR
+            data_type: nvarchar
+          - name: INFTY
+            data_type: nvarchar
+          - name: OTJID
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: REASN
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXNR
+            data_type: nvarchar
+          - name: JCODE
+            data_type: nvarchar
+          - name: MABAS
+            data_type: decimal
+          - name: MABAM
+            data_type: decimal
+          - name: MABPC
+            data_type: decimal
+          - name: WAERS
+            data_type: nvarchar
+          - name: PERIO
+            data_type: char
+          - name: BUKRS
+            data_type: nvarchar
+      - name: HRUS_D2
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: US_NAME
+            data_type: nvarchar
+          - name: REP_NAME
+            data_type: nvarchar
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: REPPR
+            data_type: nvarchar
+          - name: ACTIVE
+            data_type: char
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0000
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nvarchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: MASSN
+            data_type: nvarchar
+          - name: MASSG
+            data_type: nvarchar
+          - name: STAT1
+            data_type: nchar
+          - name: STAT2
+            data_type: nchar
+          - name: STAT3
+            data_type: nchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0001
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+          - name: WERKS
+            data_type: nvarchar
+          - name: PERSG
+            data_type: nchar
+          - name: PERSK
+            data_type: nvarchar
+          - name: VDSK1
+            data_type: nvarchar
+          - name: GSBER
+            data_type: nvarchar
+          - name: BTRTL
+            data_type: nvarchar
+          - name: JUPER
+            data_type: nvarchar
+          - name: ABKRS
+            data_type: nvarchar
+          - name: ANSVH
+            data_type: nvarchar
+          - name: KOSTL
+            data_type: nvarchar
+          - name: ORGEH
+            data_type: nvarchar
+          - name: PLANS
+            data_type: nvarchar
+          - name: STELL
+            data_type: nvarchar
+          - name: MSTBR
+            data_type: nvarchar
+          - name: SACHA
+            data_type: nvarchar
+          - name: SACHP
+            data_type: nvarchar
+          - name: SACHZ
+            data_type: nvarchar
+          - name: SNAME
+            data_type: nvarchar
+          - name: ENAME
+            data_type: nvarchar
+          - name: OTYPE
+            data_type: nvarchar
+          - name: SBMOD
+            data_type: nvarchar
+          - name: KOKRS
+            data_type: nvarchar
+          - name: FISTL
+            data_type: nvarchar
+          - name: GEBER
+            data_type: nvarchar
+          - name: FKBER
+            data_type: nvarchar
+          - name: GRANT_NBR
+            data_type: nvarchar
+          - name: SGMNT
+            data_type: nvarchar
+          - name: BUDGET_PD
+            data_type: nvarchar
+          - name: ZZANSVH2
+            data_type: nvarchar
+          - name: ZZANSVH3
+            data_type: nvarchar
+          - name: ZZAGAXX
+            data_type: nchar
+          - name: ZZGRLIV
+            data_type: nchar
+          - name: ZZUTLND
+            data_type: nchar
+          - name: ZZLAND1
+            data_type: nvarchar
+          - name: ZZPAYEE
+            data_type: nvarchar
+          - name: ZZSPKXX
+            data_type: nchar
+          - name: ZZTLG_ST
+            data_type: nvarchar
+          - name: ZZTLG_ID
+            data_type: nvarchar
+      - name: PA0002
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: INITS
+            data_type: nvarchar
+          - name: NACHN
+            data_type: nvarchar
+          - name: NAME2
+            data_type: nvarchar
+          - name: NACH2
+            data_type: nvarchar
+          - name: VORNA
+            data_type: nvarchar
+          - name: CNAME
+            data_type: nvarchar
+          - name: TITEL
+            data_type: nvarchar
+          - name: TITL2
+            data_type: nvarchar
+          - name: NAMZU
+            data_type: nvarchar
+          - name: VORSW
+            data_type: nvarchar
+          - name: VORS2
+            data_type: nvarchar
+          - name: RUFNM
+            data_type: nvarchar
+          - name: MIDNM
+            data_type: nvarchar
+          - name: KNZNM
+            data_type: nvarchar
+          - name: ANRED
+            data_type: nchar
+          - name: GESCH
+            data_type: nchar
+          - name: GBDAT
+            data_type: nvarchar
+          - name: GBDAT_dato
+            data_type: date
+          - name: GBLND
+            data_type: nvarchar
+          - name: GBDEP
+            data_type: nvarchar
+          - name: GBORT
+            data_type: nvarchar
+          - name: NATIO
+            data_type: nvarchar
+          - name: NATI2
+            data_type: nvarchar
+          - name: NATI3
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: nchar
+          - name: KONFE
+            data_type: nvarchar
+          - name: FAMST
+            data_type: nchar
+          - name: FAMDT
+            data_type: nvarchar
+          - name: FAMDT_dato
+            data_type: date
+          - name: ANZKD
+            data_type: nvarchar
+          - name: NACON
+            data_type: nchar
+          - name: PERMO
+            data_type: nvarchar
+          - name: PERID
+            data_type: nvarchar
+          - name: GBPAS
+            data_type: nvarchar
+          - name: GBPAS_dato
+            data_type: date
+          - name: FNAMK
+            data_type: nvarchar
+          - name: LNAMK
+            data_type: nvarchar
+          - name: FNAMR
+            data_type: nvarchar
+          - name: LNAMR
+            data_type: nvarchar
+          - name: NABIK
+            data_type: nvarchar
+          - name: NABIR
+            data_type: nvarchar
+          - name: NICKK
+            data_type: nvarchar
+          - name: NICKR
+            data_type: nvarchar
+          - name: GBJHR
+            data_type: nvarchar
+          - name: GBMON
+            data_type: nvarchar
+          - name: GBTAG
+            data_type: nvarchar
+          - name: NCHMC
+            data_type: nvarchar
+          - name: VNAMC
+            data_type: nvarchar
+          - name: NAMZ2
+            data_type: nvarchar
+          - name: GENDER_SI
+            data_type: nchar
+          - name: YHR_ARKIV_SAKSNR
+            data_type: nvarchar
+          - name: YHR_ID_NUMMER
+            data_type: nvarchar
+          - name: YHR_FNR_DUPLIKAT
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0006
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: ANSSA
+            data_type: nvarchar
+          - name: NAME2
+            data_type: nvarchar
+          - name: STRAS
+            data_type: nvarchar
+          - name: ORT01
+            data_type: nvarchar
+          - name: ORT02
+            data_type: nvarchar
+          - name: PSTLZ
+            data_type: nvarchar
+          - name: LAND1
+            data_type: nvarchar
+          - name: TELNR
+            data_type: nvarchar
+          - name: ENTKM
+            data_type: decimal
+          - name: WKWNG
+            data_type: char
+          - name: BUSRT
+            data_type: nvarchar
+          - name: LOCAT
+            data_type: nvarchar
+          - name: ADR03
+            data_type: nvarchar
+          - name: ADR04
+            data_type: nvarchar
+          - name: STATE
+            data_type: nvarchar
+          - name: HSNMR
+            data_type: nvarchar
+          - name: POSTA
+            data_type: nvarchar
+          - name: BLDNG
+            data_type: nvarchar
+          - name: FLOOR
+            data_type: nvarchar
+          - name: STRDS
+            data_type: nvarchar
+          - name: ENTK2
+            data_type: decimal
+          - name: COM01
+            data_type: nvarchar
+          - name: NUM01
+            data_type: nvarchar
+          - name: COM02
+            data_type: nvarchar
+          - name: NUM02
+            data_type: nvarchar
+          - name: COM03
+            data_type: nvarchar
+          - name: NUM03
+            data_type: nvarchar
+          - name: COM04
+            data_type: nvarchar
+          - name: NUM04
+            data_type: nvarchar
+          - name: COM05
+            data_type: nvarchar
+          - name: NUM05
+            data_type: nvarchar
+          - name: COM06
+            data_type: nvarchar
+          - name: NUM06
+            data_type: nvarchar
+          - name: INDRL
+            data_type: nvarchar
+          - name: COUNC
+            data_type: nvarchar
+          - name: RCTVC
+            data_type: nvarchar
+          - name: OR2KK
+            data_type: nvarchar
+          - name: CONKK
+            data_type: nvarchar
+          - name: OR1KK
+            data_type: nvarchar
+          - name: RAILW
+            data_type: char
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0007
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: SCHKZ
+            data_type: nvarchar
+          - name: ZTERF
+            data_type: char
+          - name: EMPCT
+            data_type: decimal
+          - name: MOSTD
+            data_type: decimal
+          - name: WOSTD
+            data_type: decimal
+          - name: ARBST
+            data_type: decimal
+          - name: WKWDY
+            data_type: decimal
+          - name: JRSTD
+            data_type: decimal
+          - name: TEILK
+            data_type: char
+          - name: MINTA
+            data_type: decimal
+          - name: MAXTA
+            data_type: decimal
+          - name: MINWO
+            data_type: decimal
+          - name: MAXWO
+            data_type: decimal
+          - name: MINMO
+            data_type: decimal
+          - name: MAXMO
+            data_type: decimal
+          - name: MINJA
+            data_type: decimal
+          - name: MAXJA
+            data_type: decimal
+          - name: DYSCH
+            data_type: char
+          - name: KZTIM
+            data_type: nvarchar
+          - name: WWEEK
+            data_type: nvarchar
+          - name: AWTYP
+            data_type: nvarchar
+          - name: ZZTIDSYS
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0008
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nchar
+          - name: PREAS
+            data_type: nchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nchar
+          - name: RESE2
+            data_type: nchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: TRFAR
+            data_type: nchar
+          - name: TRFGB
+            data_type: nchar
+          - name: TRFGR
+            data_type: nvarchar
+          - name: TRFST
+            data_type: nchar
+          - name: STVOR
+            data_type: nvarchar
+          - name: STVOR_dato
+            data_type: date
+          - name: ORZST
+            data_type: nchar
+          - name: PARTN
+            data_type: nchar
+          - name: WAERS
+            data_type: nvarchar
+          - name: VGLTA
+            data_type: nchar
+          - name: VGLGB
+            data_type: nchar
+          - name: VGLGR
+            data_type: nvarchar
+          - name: VGLST
+            data_type: nchar
+          - name: VGLSV
+            data_type: nvarchar
+          - name: VGLSV_dato
+            data_type: date
+          - name: BSGRD
+            data_type: nvarchar
+          - name: DIVGV
+            data_type: nvarchar
+          - name: ANSAL
+            data_type: nvarchar
+          - name: FALGK
+            data_type: nvarchar
+          - name: FALGR
+            data_type: nvarchar
+          - name: LGA01
+            data_type: nvarchar
+          - name: BET01
+            data_type: nvarchar
+          - name: ANZ01
+            data_type: nvarchar
+          - name: EIN01
+            data_type: nvarchar
+          - name: OPK01
+            data_type: nchar
+          - name: LGA02
+            data_type: nvarchar
+          - name: BET02
+            data_type: nvarchar
+          - name: ANZ02
+            data_type: nvarchar
+          - name: EIN02
+            data_type: nvarchar
+          - name: OPK02
+            data_type: nchar
+          - name: LGA03
+            data_type: nvarchar
+          - name: BET03
+            data_type: nvarchar
+          - name: ANZ03
+            data_type: nvarchar
+          - name: EIN03
+            data_type: nvarchar
+          - name: OPK03
+            data_type: nchar
+          - name: LGA04
+            data_type: nvarchar
+          - name: BET04
+            data_type: nvarchar
+          - name: ANZ04
+            data_type: nvarchar
+          - name: EIN04
+            data_type: nvarchar
+          - name: OPK04
+            data_type: nchar
+          - name: LGA05
+            data_type: nvarchar
+          - name: BET05
+            data_type: nvarchar
+          - name: ANZ05
+            data_type: nvarchar
+          - name: EIN05
+            data_type: nvarchar
+          - name: OPK05
+            data_type: nchar
+          - name: LGA06
+            data_type: nvarchar
+          - name: BET06
+            data_type: nvarchar
+          - name: ANZ06
+            data_type: nvarchar
+          - name: EIN06
+            data_type: nvarchar
+          - name: OPK06
+            data_type: nchar
+          - name: LGA07
+            data_type: nvarchar
+          - name: BET07
+            data_type: nvarchar
+          - name: ANZ07
+            data_type: nvarchar
+          - name: EIN07
+            data_type: nvarchar
+          - name: OPK07
+            data_type: nchar
+          - name: LGA08
+            data_type: nvarchar
+          - name: BET08
+            data_type: nvarchar
+          - name: ANZ08
+            data_type: nvarchar
+          - name: EIN08
+            data_type: nvarchar
+          - name: OPK08
+            data_type: nchar
+          - name: LGA09
+            data_type: nvarchar
+          - name: BET09
+            data_type: nvarchar
+          - name: ANZ09
+            data_type: nvarchar
+          - name: EIN09
+            data_type: nvarchar
+          - name: OPK09
+            data_type: nchar
+          - name: LGA10
+            data_type: nvarchar
+          - name: BET10
+            data_type: nvarchar
+          - name: ANZ10
+            data_type: nvarchar
+          - name: EIN10
+            data_type: nvarchar
+          - name: OPK10
+            data_type: nchar
+          - name: LGA11
+            data_type: nvarchar
+          - name: BET11
+            data_type: nvarchar
+          - name: ANZ11
+            data_type: nvarchar
+          - name: EIN11
+            data_type: nvarchar
+          - name: OPK11
+            data_type: nchar
+          - name: LGA12
+            data_type: nvarchar
+          - name: BET12
+            data_type: nvarchar
+          - name: ANZ12
+            data_type: nvarchar
+          - name: EIN12
+            data_type: nvarchar
+          - name: OPK12
+            data_type: nchar
+          - name: LGA13
+            data_type: nvarchar
+          - name: BET13
+            data_type: nvarchar
+          - name: ANZ13
+            data_type: nvarchar
+          - name: EIN13
+            data_type: nvarchar
+          - name: OPK13
+            data_type: nchar
+          - name: LGA14
+            data_type: nvarchar
+          - name: BET14
+            data_type: nvarchar
+          - name: ANZ14
+            data_type: nvarchar
+          - name: EIN14
+            data_type: nvarchar
+          - name: OPK14
+            data_type: nchar
+          - name: LGA15
+            data_type: nvarchar
+          - name: BET15
+            data_type: nvarchar
+          - name: ANZ15
+            data_type: nvarchar
+          - name: EIN15
+            data_type: nvarchar
+          - name: OPK15
+            data_type: nchar
+          - name: LGA16
+            data_type: nvarchar
+          - name: BET16
+            data_type: nvarchar
+          - name: ANZ16
+            data_type: nvarchar
+          - name: EIN16
+            data_type: nvarchar
+          - name: OPK16
+            data_type: nchar
+          - name: LGA17
+            data_type: nvarchar
+          - name: BET17
+            data_type: nvarchar
+          - name: ANZ17
+            data_type: nvarchar
+          - name: EIN17
+            data_type: nvarchar
+          - name: OPK17
+            data_type: nchar
+          - name: LGA18
+            data_type: nvarchar
+          - name: BET18
+            data_type: nvarchar
+          - name: ANZ18
+            data_type: nvarchar
+          - name: EIN18
+            data_type: nvarchar
+          - name: OPK18
+            data_type: nchar
+          - name: LGA19
+            data_type: nvarchar
+          - name: BET19
+            data_type: nvarchar
+          - name: ANZ19
+            data_type: nvarchar
+          - name: EIN19
+            data_type: nvarchar
+          - name: OPK19
+            data_type: nchar
+          - name: LGA20
+            data_type: nvarchar
+          - name: BET20
+            data_type: nvarchar
+          - name: ANZ20
+            data_type: nvarchar
+          - name: EIN20
+            data_type: nvarchar
+          - name: OPK20
+            data_type: nchar
+          - name: LGA21
+            data_type: nvarchar
+          - name: BET21
+            data_type: nvarchar
+          - name: ANZ21
+            data_type: nvarchar
+          - name: EIN21
+            data_type: nvarchar
+          - name: OPK21
+            data_type: nchar
+          - name: LGA22
+            data_type: nvarchar
+          - name: BET22
+            data_type: nvarchar
+          - name: ANZ22
+            data_type: nvarchar
+          - name: EIN22
+            data_type: nvarchar
+          - name: OPK22
+            data_type: nchar
+          - name: LGA23
+            data_type: nvarchar
+          - name: BET23
+            data_type: nvarchar
+          - name: ANZ23
+            data_type: nvarchar
+          - name: EIN23
+            data_type: nvarchar
+          - name: OPK23
+            data_type: nchar
+          - name: LGA24
+            data_type: nvarchar
+          - name: BET24
+            data_type: nvarchar
+          - name: ANZ24
+            data_type: nvarchar
+          - name: EIN24
+            data_type: nvarchar
+          - name: OPK24
+            data_type: nchar
+          - name: LGA25
+            data_type: nvarchar
+          - name: BET25
+            data_type: nvarchar
+          - name: ANZ25
+            data_type: nvarchar
+          - name: EIN25
+            data_type: nvarchar
+          - name: OPK25
+            data_type: nchar
+          - name: LGA26
+            data_type: nvarchar
+          - name: BET26
+            data_type: nvarchar
+          - name: ANZ26
+            data_type: nvarchar
+          - name: EIN26
+            data_type: nvarchar
+          - name: OPK26
+            data_type: nchar
+          - name: LGA27
+            data_type: nvarchar
+          - name: BET27
+            data_type: nvarchar
+          - name: ANZ27
+            data_type: nvarchar
+          - name: EIN27
+            data_type: nvarchar
+          - name: OPK27
+            data_type: nchar
+          - name: LGA28
+            data_type: nvarchar
+          - name: BET28
+            data_type: nvarchar
+          - name: ANZ28
+            data_type: nvarchar
+          - name: EIN28
+            data_type: nvarchar
+          - name: OPK28
+            data_type: nchar
+          - name: LGA29
+            data_type: nvarchar
+          - name: BET29
+            data_type: nvarchar
+          - name: ANZ29
+            data_type: nvarchar
+          - name: EIN29
+            data_type: nvarchar
+          - name: OPK29
+            data_type: nchar
+          - name: LGA30
+            data_type: nvarchar
+          - name: BET30
+            data_type: nvarchar
+          - name: ANZ30
+            data_type: nvarchar
+          - name: EIN30
+            data_type: nvarchar
+          - name: OPK30
+            data_type: nchar
+          - name: LGA31
+            data_type: nvarchar
+          - name: BET31
+            data_type: nvarchar
+          - name: ANZ31
+            data_type: nvarchar
+          - name: EIN31
+            data_type: nvarchar
+          - name: OPK31
+            data_type: nchar
+          - name: LGA32
+            data_type: nvarchar
+          - name: BET32
+            data_type: nvarchar
+          - name: ANZ32
+            data_type: nvarchar
+          - name: EIN32
+            data_type: nvarchar
+          - name: OPK32
+            data_type: nchar
+          - name: LGA33
+            data_type: nvarchar
+          - name: BET33
+            data_type: nvarchar
+          - name: ANZ33
+            data_type: nvarchar
+          - name: EIN33
+            data_type: nvarchar
+          - name: OPK33
+            data_type: nchar
+          - name: LGA34
+            data_type: nvarchar
+          - name: BET34
+            data_type: nvarchar
+          - name: ANZ34
+            data_type: nvarchar
+          - name: EIN34
+            data_type: nvarchar
+          - name: OPK34
+            data_type: nchar
+          - name: LGA35
+            data_type: nvarchar
+          - name: BET35
+            data_type: nvarchar
+          - name: ANZ35
+            data_type: nvarchar
+          - name: EIN35
+            data_type: nvarchar
+          - name: OPK35
+            data_type: nchar
+          - name: LGA36
+            data_type: nvarchar
+          - name: BET36
+            data_type: nvarchar
+          - name: ANZ36
+            data_type: nvarchar
+          - name: EIN36
+            data_type: nvarchar
+          - name: OPK36
+            data_type: nchar
+          - name: LGA37
+            data_type: nvarchar
+          - name: BET37
+            data_type: nvarchar
+          - name: ANZ37
+            data_type: nvarchar
+          - name: EIN37
+            data_type: nvarchar
+          - name: OPK37
+            data_type: nchar
+          - name: LGA38
+            data_type: nvarchar
+          - name: BET38
+            data_type: nvarchar
+          - name: ANZ38
+            data_type: nvarchar
+          - name: EIN38
+            data_type: nvarchar
+          - name: OPK38
+            data_type: nchar
+          - name: LGA39
+            data_type: nvarchar
+          - name: BET39
+            data_type: nvarchar
+          - name: ANZ39
+            data_type: nvarchar
+          - name: EIN39
+            data_type: nvarchar
+          - name: OPK39
+            data_type: nchar
+          - name: LGA40
+            data_type: nvarchar
+          - name: BET40
+            data_type: nvarchar
+          - name: ANZ40
+            data_type: nvarchar
+          - name: EIN40
+            data_type: nvarchar
+          - name: OPK40
+            data_type: nchar
+          - name: IND01
+            data_type: nchar
+          - name: IND02
+            data_type: nchar
+          - name: IND03
+            data_type: nchar
+          - name: IND04
+            data_type: nchar
+          - name: IND05
+            data_type: nchar
+          - name: IND06
+            data_type: nchar
+          - name: IND07
+            data_type: nchar
+          - name: IND08
+            data_type: nchar
+          - name: IND09
+            data_type: nchar
+          - name: IND10
+            data_type: nchar
+          - name: IND11
+            data_type: nchar
+          - name: IND12
+            data_type: nchar
+          - name: IND13
+            data_type: nchar
+          - name: IND14
+            data_type: nchar
+          - name: IND15
+            data_type: nchar
+          - name: IND16
+            data_type: nchar
+          - name: IND17
+            data_type: nchar
+          - name: IND18
+            data_type: nchar
+          - name: IND19
+            data_type: nchar
+          - name: IND20
+            data_type: nchar
+          - name: IND21
+            data_type: nchar
+          - name: IND22
+            data_type: nchar
+          - name: IND23
+            data_type: nchar
+          - name: IND24
+            data_type: nchar
+          - name: IND25
+            data_type: nchar
+          - name: IND26
+            data_type: nchar
+          - name: IND27
+            data_type: nchar
+          - name: IND28
+            data_type: nchar
+          - name: IND29
+            data_type: nchar
+          - name: IND30
+            data_type: nchar
+          - name: IND31
+            data_type: nchar
+          - name: IND32
+            data_type: nchar
+          - name: IND33
+            data_type: nchar
+          - name: IND34
+            data_type: nchar
+          - name: IND35
+            data_type: nchar
+          - name: IND36
+            data_type: nchar
+          - name: IND37
+            data_type: nchar
+          - name: IND38
+            data_type: nchar
+          - name: IND39
+            data_type: nchar
+          - name: IND40
+            data_type: nchar
+          - name: ANCUR
+            data_type: nvarchar
+          - name: CPIND
+            data_type: nchar
+          - name: FLAGA
+            data_type: nchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0009
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: OPKEN
+            data_type: char
+          - name: BETRG
+            data_type: decimal
+          - name: WAERS
+            data_type: nvarchar
+          - name: ANZHL
+            data_type: decimal
+          - name: ZEINH
+            data_type: nvarchar
+          - name: BNKSA
+            data_type: nvarchar
+          - name: ZLSCH
+            data_type: char
+          - name: EMFTX
+            data_type: nvarchar
+          - name: BKPLZ
+            data_type: nvarchar
+          - name: BKORT
+            data_type: nvarchar
+          - name: BANKS
+            data_type: nvarchar
+          - name: BANKL
+            data_type: nvarchar
+          - name: BANKN
+            data_type: nvarchar
+          - name: BANKP
+            data_type: nvarchar
+          - name: BKONT
+            data_type: nvarchar
+          - name: SWIFT
+            data_type: nvarchar
+          - name: DTAWS
+            data_type: nvarchar
+          - name: DTAMS
+            data_type: char
+          - name: STCD1
+            data_type: nvarchar
+          - name: STCD2
+            data_type: nvarchar
+          - name: PSKTO
+            data_type: nvarchar
+          - name: ESRNR
+            data_type: nvarchar
+          - name: ESRRE
+            data_type: nvarchar
+          - name: ESRPZ
+            data_type: nvarchar
+          - name: EMFSL
+            data_type: nvarchar
+          - name: ZWECK
+            data_type: nvarchar
+          - name: BTTYP
+            data_type: nvarchar
+          - name: PAYTY
+            data_type: char
+          - name: PAYID
+            data_type: char
+          - name: OCRSN
+            data_type: nvarchar
+          - name: BONDT
+            data_type: nvarchar
+          - name: BKREF
+            data_type: nvarchar
+          - name: STRAS
+            data_type: nvarchar
+          - name: STATE
+            data_type: nvarchar
+          - name: DEBIT
+            data_type: char
+          - name: IBAN
+            data_type: nvarchar
+          - name: ADRS_BANKS
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0014
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: LGART
+            data_type: nvarchar
+          - name: OPKEN
+            data_type: nchar
+          - name: BETRG
+            data_type: nvarchar
+          - name: WAERS
+            data_type: nvarchar
+          - name: ANZHL
+            data_type: decimal
+          - name: ZEINH
+            data_type: nvarchar
+          - name: INDBW
+            data_type: nchar
+          - name: ZDATE
+            data_type: nvarchar
+          - name: ZDATE_dato
+            data_type: date
+          - name: ZFPER
+            data_type: nvarchar
+          - name: ZANZL
+            data_type: nvarchar
+          - name: ZEINZ
+            data_type: nvarchar
+          - name: ZUORD
+            data_type: nvarchar
+          - name: UWDAT
+            data_type: nvarchar
+          - name: UWDAT_dato
+            data_type: date
+          - name: MODEL
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0015
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nchar
+          - name: PERNR
+            data_type: nchar
+          - name: SUBTY
+            data_type: nchar
+          - name: OBJPS
+            data_type: nchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nchar
+          - name: AEDTM
+            data_type: nchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nchar
+          - name: PREAS
+            data_type: nchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nchar
+          - name: RESE2
+            data_type: nchar
+          - name: GRPVL
+            data_type: nchar
+          - name: LGART
+            data_type: nchar
+          - name: OPKEN
+            data_type: char
+          - name: BETRG
+            data_type: nvarchar
+          - name: WAERS
+            data_type: nchar
+          - name: ANZHL
+            data_type: decimal
+          - name: ZEINH
+            data_type: nchar
+          - name: INDBW
+            data_type: char
+          - name: ZUORD
+            data_type: nchar
+          - name: ESTDT
+            data_type: nchar
+          - name: ESTDT_dato
+            data_type: date
+          - name: PABRJ
+            data_type: nchar
+          - name: PABRP
+            data_type: nchar
+          - name: UWDAT
+            data_type: nchar
+          - name: UWDAT_dato
+            data_type: date
+          - name: ITFTT
+            data_type: nchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0017
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: PKWRG
+            data_type: char
+          - name: PKWKL
+            data_type: nvarchar
+          - name: PEKEZ
+            data_type: char
+          - name: ERKLA
+            data_type: char
+          - name: ERGRU
+            data_type: nvarchar
+          - name: SPEBE
+            data_type: char
+          - name: BWAEN
+            data_type: char
+          - name: PTZUO
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+          - name: WERKS
+            data_type: nvarchar
+          - name: KOSTL
+            data_type: nvarchar
+          - name: GSBER
+            data_type: nvarchar
+          - name: FISTL
+            data_type: nvarchar
+          - name: GEBER
+            data_type: nvarchar
+          - name: KZPMF
+            data_type: char
+          - name: KFZBD
+            data_type: nvarchar
+          - name: KFZBD_dato
+            data_type: date
+          - name: TXJCD
+            data_type: nvarchar
+          - name: KFZKZ
+            data_type: nvarchar
+          - name: FKBER
+            data_type: nvarchar
+          - name: GRANT_NBR
+            data_type: nvarchar
+          - name: FIPEX
+            data_type: nvarchar
+          - name: STAND_APP
+            data_type: nvarchar
+          - name: TRVEDI
+            data_type: nvarchar
+          - name: BUDGET_PERIOD
+            data_type: nvarchar
+          - name: CNSMPT_INCITY
+            data_type: decimal
+          - name: CNSMPT_OVERLAND
+            data_type: decimal
+          - name: CNSMPT_COMBINED
+            data_type: decimal
+          - name: FUEL_TYPE
+            data_type: nvarchar
+      - name: PA0019
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: TMART
+            data_type: nvarchar
+          - name: TERMN
+            data_type: nvarchar
+          - name: TERMN_dato
+            data_type: date
+          - name: MNDAT
+            data_type: nvarchar
+          - name: MNDAT_dato
+            data_type: date
+          - name: BVMRK
+            data_type: nchar
+          - name: TMJHR
+            data_type: nvarchar
+          - name: TMMON
+            data_type: nvarchar
+          - name: TMTAG
+            data_type: nvarchar
+          - name: MNJHR
+            data_type: nvarchar
+          - name: MNMON
+            data_type: nvarchar
+          - name: MNTAG
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0022
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: SLART
+            data_type: nvarchar
+          - name: INSTI
+            data_type: nvarchar
+          - name: SLAND
+            data_type: nvarchar
+          - name: AUSBI
+            data_type: nvarchar
+          - name: SLABS
+            data_type: nvarchar
+          - name: ANZKL
+            data_type: decimal
+          - name: ANZEH
+            data_type: nvarchar
+          - name: SLTP1
+            data_type: nvarchar
+          - name: SLTP2
+            data_type: nvarchar
+          - name: JBEZ1
+            data_type: decimal
+          - name: WAERS
+            data_type: nvarchar
+          - name: SLPLN
+            data_type: char
+          - name: SLKTR
+            data_type: nvarchar
+          - name: SLRZG
+            data_type: char
+          - name: KSBEZ
+            data_type: nvarchar
+          - name: TX122
+            data_type: nvarchar
+          - name: SCHCD
+            data_type: nvarchar
+          - name: FACCD
+            data_type: nvarchar
+          - name: DPTMT
+            data_type: nvarchar
+          - name: EMARK
+            data_type: nvarchar
+          - name: ZZ_NUS_CODE
+            data_type: varchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0023
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: ARBGB
+            data_type: nvarchar
+          - name: ORT01
+            data_type: nvarchar
+          - name: LAND1
+            data_type: nvarchar
+          - name: BRANC
+            data_type: nvarchar
+          - name: TAETE
+            data_type: nvarchar
+          - name: ANSVX
+            data_type: nvarchar
+          - name: ORTJ1
+            data_type: nvarchar
+          - name: ORTJ2
+            data_type: nvarchar
+          - name: ORTJ3
+            data_type: nvarchar
+          - name: EMPCT
+            data_type: nvarchar
+          - name: STILLING
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0027
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: KSTAR
+            data_type: nvarchar
+          - name: KBU01
+            data_type: nvarchar
+          - name: KGB01
+            data_type: nvarchar
+          - name: KST01
+            data_type: nvarchar
+          - name: KPR01
+            data_type: nvarchar
+          - name: KBU02
+            data_type: nvarchar
+          - name: KGB02
+            data_type: nvarchar
+          - name: KST02
+            data_type: nvarchar
+          - name: KPR02
+            data_type: nvarchar
+          - name: KBU03
+            data_type: nvarchar
+          - name: KGB03
+            data_type: nvarchar
+          - name: KST03
+            data_type: nvarchar
+          - name: KPR03
+            data_type: nvarchar
+          - name: KBU04
+            data_type: nvarchar
+          - name: KGB04
+            data_type: nvarchar
+          - name: KST04
+            data_type: nvarchar
+          - name: KPR04
+            data_type: nvarchar
+          - name: KBU05
+            data_type: nvarchar
+          - name: KGB05
+            data_type: nvarchar
+          - name: KST05
+            data_type: nvarchar
+          - name: KPR05
+            data_type: nvarchar
+          - name: KBU06
+            data_type: nvarchar
+          - name: KGB06
+            data_type: nvarchar
+          - name: KST06
+            data_type: nvarchar
+          - name: KPR06
+            data_type: nvarchar
+          - name: KBU07
+            data_type: nvarchar
+          - name: KGB07
+            data_type: nvarchar
+          - name: KST07
+            data_type: nvarchar
+          - name: KPR07
+            data_type: nvarchar
+          - name: KBU08
+            data_type: nvarchar
+          - name: KGB08
+            data_type: nvarchar
+          - name: KST08
+            data_type: nvarchar
+          - name: KPR08
+            data_type: nvarchar
+          - name: KBU09
+            data_type: nvarchar
+          - name: KGB09
+            data_type: nvarchar
+          - name: KST09
+            data_type: nvarchar
+          - name: KPR09
+            data_type: nvarchar
+          - name: KBU10
+            data_type: nvarchar
+          - name: KGB10
+            data_type: nvarchar
+          - name: KST10
+            data_type: nvarchar
+          - name: KPR10
+            data_type: nvarchar
+          - name: KBU11
+            data_type: nvarchar
+          - name: KGB11
+            data_type: nvarchar
+          - name: KST11
+            data_type: nvarchar
+          - name: KPR11
+            data_type: nvarchar
+          - name: KBU12
+            data_type: nvarchar
+          - name: KGB12
+            data_type: nvarchar
+          - name: KST12
+            data_type: nvarchar
+          - name: KPR12
+            data_type: nvarchar
+          - name: KBU13
+            data_type: nvarchar
+          - name: KGB13
+            data_type: nvarchar
+          - name: KST13
+            data_type: nvarchar
+          - name: KPR13
+            data_type: nvarchar
+          - name: KBU14
+            data_type: nvarchar
+          - name: KGB14
+            data_type: nvarchar
+          - name: KST14
+            data_type: nvarchar
+          - name: KPR14
+            data_type: nvarchar
+          - name: KBU15
+            data_type: nvarchar
+          - name: KGB15
+            data_type: nvarchar
+          - name: KST15
+            data_type: nvarchar
+          - name: KPR15
+            data_type: nvarchar
+          - name: KBU16
+            data_type: nvarchar
+          - name: KGB16
+            data_type: nvarchar
+          - name: KST16
+            data_type: nvarchar
+          - name: KPR16
+            data_type: nvarchar
+          - name: KBU17
+            data_type: nvarchar
+          - name: KGB17
+            data_type: nvarchar
+          - name: KST17
+            data_type: nvarchar
+          - name: KPR17
+            data_type: nvarchar
+          - name: KBU18
+            data_type: nvarchar
+          - name: KGB18
+            data_type: nvarchar
+          - name: KST18
+            data_type: nvarchar
+          - name: KPR18
+            data_type: nvarchar
+          - name: KBU19
+            data_type: nvarchar
+          - name: KGB19
+            data_type: nvarchar
+          - name: KST19
+            data_type: nvarchar
+          - name: KPR19
+            data_type: nvarchar
+          - name: KBU20
+            data_type: nvarchar
+          - name: KGB20
+            data_type: nvarchar
+          - name: KST20
+            data_type: nvarchar
+          - name: KPR20
+            data_type: nvarchar
+          - name: KBU21
+            data_type: nvarchar
+          - name: KGB21
+            data_type: nvarchar
+          - name: KST21
+            data_type: nvarchar
+          - name: KPR21
+            data_type: nvarchar
+          - name: KBU22
+            data_type: nvarchar
+          - name: KGB22
+            data_type: nvarchar
+          - name: KST22
+            data_type: nvarchar
+          - name: KPR22
+            data_type: nvarchar
+          - name: KBU23
+            data_type: nvarchar
+          - name: KGB23
+            data_type: nvarchar
+          - name: KST23
+            data_type: nvarchar
+          - name: KPR23
+            data_type: nvarchar
+          - name: KBU24
+            data_type: nvarchar
+          - name: KGB24
+            data_type: nvarchar
+          - name: KST24
+            data_type: nvarchar
+          - name: KPR24
+            data_type: nvarchar
+          - name: KBU25
+            data_type: nvarchar
+          - name: KGB25
+            data_type: nvarchar
+          - name: KST25
+            data_type: nvarchar
+          - name: KPR25
+            data_type: nvarchar
+          - name: FCT01
+            data_type: nvarchar
+          - name: FCD01
+            data_type: nvarchar
+          - name: FKBER01
+            data_type: nvarchar
+          - name: GRANT01
+            data_type: nvarchar
+          - name: FCT02
+            data_type: nvarchar
+          - name: FCD02
+            data_type: nvarchar
+          - name: FKBER02
+            data_type: nvarchar
+          - name: GRANT02
+            data_type: nvarchar
+          - name: FCT03
+            data_type: nvarchar
+          - name: FCD03
+            data_type: nvarchar
+          - name: FKBER03
+            data_type: nvarchar
+          - name: GRANT03
+            data_type: nvarchar
+          - name: FCT04
+            data_type: nvarchar
+          - name: FCD04
+            data_type: nvarchar
+          - name: FKBER04
+            data_type: nvarchar
+          - name: GRANT04
+            data_type: nvarchar
+          - name: FCT05
+            data_type: nvarchar
+          - name: FCD05
+            data_type: nvarchar
+          - name: FKBER05
+            data_type: nvarchar
+          - name: GRANT05
+            data_type: nvarchar
+          - name: FCT06
+            data_type: nvarchar
+          - name: FCD06
+            data_type: nvarchar
+          - name: FKBER06
+            data_type: nvarchar
+          - name: GRANT06
+            data_type: nvarchar
+          - name: FCT07
+            data_type: nvarchar
+          - name: FCD07
+            data_type: nvarchar
+          - name: FKBER07
+            data_type: nvarchar
+          - name: GRANT07
+            data_type: nvarchar
+          - name: FCT08
+            data_type: nvarchar
+          - name: FCD08
+            data_type: nvarchar
+          - name: FKBER08
+            data_type: nvarchar
+          - name: GRANT08
+            data_type: nvarchar
+          - name: FCT09
+            data_type: nvarchar
+          - name: FCD09
+            data_type: nvarchar
+          - name: FKBER09
+            data_type: nvarchar
+          - name: GRANT09
+            data_type: nvarchar
+          - name: FCT10
+            data_type: nvarchar
+          - name: FCD10
+            data_type: nvarchar
+          - name: FKBER10
+            data_type: nvarchar
+          - name: GRANT10
+            data_type: nvarchar
+          - name: FCT11
+            data_type: nvarchar
+          - name: FCD11
+            data_type: nvarchar
+          - name: FKBER11
+            data_type: nvarchar
+          - name: GRANT11
+            data_type: nvarchar
+          - name: FCT12
+            data_type: nvarchar
+          - name: FCD12
+            data_type: nvarchar
+          - name: FKBER12
+            data_type: nvarchar
+          - name: GRANT12
+            data_type: nvarchar
+          - name: AUF01
+            data_type: nvarchar
+          - name: AUF02
+            data_type: nvarchar
+          - name: AUF03
+            data_type: nvarchar
+          - name: AUF04
+            data_type: nvarchar
+          - name: AUF05
+            data_type: nvarchar
+          - name: AUF06
+            data_type: nvarchar
+          - name: AUF07
+            data_type: nvarchar
+          - name: AUF08
+            data_type: nvarchar
+          - name: AUF09
+            data_type: nvarchar
+          - name: AUF10
+            data_type: nvarchar
+          - name: AUF11
+            data_type: nvarchar
+          - name: AUF12
+            data_type: nvarchar
+          - name: AUF13
+            data_type: nvarchar
+          - name: AUF14
+            data_type: nvarchar
+          - name: AUF15
+            data_type: nvarchar
+          - name: AUF16
+            data_type: nvarchar
+          - name: AUF17
+            data_type: nvarchar
+          - name: AUF18
+            data_type: nvarchar
+          - name: AUF19
+            data_type: nvarchar
+          - name: AUF20
+            data_type: nvarchar
+          - name: AUF21
+            data_type: nvarchar
+          - name: AUF22
+            data_type: nvarchar
+          - name: AUF23
+            data_type: nvarchar
+          - name: AUF24
+            data_type: nvarchar
+          - name: AUF25
+            data_type: nvarchar
+          - name: PSP01
+            data_type: nvarchar
+          - name: PSP02
+            data_type: nvarchar
+          - name: PSP03
+            data_type: nvarchar
+          - name: PSP04
+            data_type: nvarchar
+          - name: PSP05
+            data_type: nvarchar
+          - name: PSP06
+            data_type: nvarchar
+          - name: PSP07
+            data_type: nvarchar
+          - name: PSP08
+            data_type: nvarchar
+          - name: PSP09
+            data_type: nvarchar
+          - name: PSP10
+            data_type: nvarchar
+          - name: PSP11
+            data_type: nvarchar
+          - name: PSP12
+            data_type: nvarchar
+          - name: PSP13
+            data_type: nvarchar
+          - name: PSP14
+            data_type: nvarchar
+          - name: PSP15
+            data_type: nvarchar
+          - name: PSP16
+            data_type: nvarchar
+          - name: PSP17
+            data_type: nvarchar
+          - name: PSP18
+            data_type: nvarchar
+          - name: PSP19
+            data_type: nvarchar
+          - name: PSP20
+            data_type: nvarchar
+          - name: PSP21
+            data_type: nvarchar
+          - name: PSP22
+            data_type: nvarchar
+          - name: PSP23
+            data_type: nvarchar
+          - name: PSP24
+            data_type: nvarchar
+          - name: PSP25
+            data_type: nvarchar
+          - name: SGM01
+            data_type: nvarchar
+          - name: SGM02
+            data_type: nvarchar
+          - name: SGM03
+            data_type: nvarchar
+          - name: SGM04
+            data_type: nvarchar
+          - name: SGM05
+            data_type: nvarchar
+          - name: SGM06
+            data_type: nvarchar
+          - name: SGM07
+            data_type: nvarchar
+          - name: SGM08
+            data_type: nvarchar
+          - name: SGM09
+            data_type: nvarchar
+          - name: SGM10
+            data_type: nvarchar
+          - name: SGM11
+            data_type: nvarchar
+          - name: SGM12
+            data_type: nvarchar
+          - name: BUDGET_PD01
+            data_type: nvarchar
+          - name: BUDGET_PD02
+            data_type: nvarchar
+          - name: BUDGET_PD03
+            data_type: nvarchar
+          - name: BUDGET_PD04
+            data_type: nvarchar
+          - name: BUDGET_PD05
+            data_type: nvarchar
+          - name: BUDGET_PD06
+            data_type: nvarchar
+          - name: BUDGET_PD07
+            data_type: nvarchar
+          - name: BUDGET_PD08
+            data_type: nvarchar
+          - name: BUDGET_PD09
+            data_type: nvarchar
+          - name: BUDGET_PD10
+            data_type: nvarchar
+          - name: BUDGET_PD11
+            data_type: nvarchar
+          - name: BUDGET_PD12
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0034
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nchar
+          - name: PREAS
+            data_type: nchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nchar
+          - name: RESE2
+            data_type: nchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: FUNKT
+            data_type: nvarchar
+          - name: DAT34
+            data_type: nvarchar
+          - name: DAT34_dato
+            data_type: date
+          - name: ZZVERV
+            data_type: nvarchar
+          - name: ZZROLLE
+            data_type: nvarchar
+          - name: ZZPROSENT
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0041
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: DAR01
+            data_type: nvarchar
+          - name: DAT01
+            data_type: nvarchar
+          - name: DAT01_dato
+            data_type: date
+          - name: DAR02
+            data_type: nvarchar
+          - name: DAT02
+            data_type: nvarchar
+          - name: DAT02_dato
+            data_type: date
+          - name: DAR03
+            data_type: nvarchar
+          - name: DAT03
+            data_type: nvarchar
+          - name: DAT03_dato
+            data_type: date
+          - name: DAR04
+            data_type: nvarchar
+          - name: DAT04
+            data_type: nvarchar
+          - name: DAT04_dato
+            data_type: date
+          - name: DAR05
+            data_type: nvarchar
+          - name: DAT05
+            data_type: nvarchar
+          - name: DAT05_dato
+            data_type: date
+          - name: DAR06
+            data_type: nvarchar
+          - name: DAT06
+            data_type: nvarchar
+          - name: DAT06_dato
+            data_type: date
+          - name: DAR07
+            data_type: nvarchar
+          - name: DAT07
+            data_type: nvarchar
+          - name: DAT07_dato
+            data_type: date
+          - name: DAR08
+            data_type: nvarchar
+          - name: DAT08
+            data_type: nvarchar
+          - name: DAT08_dato
+            data_type: date
+          - name: DAR09
+            data_type: nvarchar
+          - name: DAT09
+            data_type: nvarchar
+          - name: DAT09_dato
+            data_type: date
+          - name: DAR10
+            data_type: nvarchar
+          - name: DAT10
+            data_type: nvarchar
+          - name: DAT10_dato
+            data_type: date
+          - name: DAR11
+            data_type: nvarchar
+          - name: DAT11
+            data_type: nvarchar
+          - name: DAT11_dato
+            data_type: date
+          - name: DAR12
+            data_type: nvarchar
+          - name: DAT12
+            data_type: nvarchar
+          - name: DAT12_dato
+            data_type: date
+          - name: DAR13
+            data_type: nvarchar
+          - name: DAT13
+            data_type: nvarchar
+          - name: DAT13_dato
+            data_type: date
+          - name: DAR14
+            data_type: nvarchar
+          - name: DAT14
+            data_type: nvarchar
+          - name: DAT14_dato
+            data_type: date
+          - name: DAR15
+            data_type: nvarchar
+          - name: DAT15
+            data_type: nvarchar
+          - name: DAT15_dato
+            data_type: date
+          - name: DAR16
+            data_type: nvarchar
+          - name: DAT16
+            data_type: nvarchar
+          - name: DAT16_dato
+            data_type: date
+          - name: DAR17
+            data_type: nvarchar
+          - name: DAT17
+            data_type: nvarchar
+          - name: DAT17_dato
+            data_type: date
+          - name: DAR18
+            data_type: nvarchar
+          - name: DAT18
+            data_type: nvarchar
+          - name: DAT18_dato
+            data_type: date
+          - name: DAR19
+            data_type: nvarchar
+          - name: DAT19
+            data_type: nvarchar
+          - name: DAT19_dato
+            data_type: date
+          - name: DAR20
+            data_type: nvarchar
+          - name: DAT20
+            data_type: nvarchar
+          - name: DAT20_dato
+            data_type: date
+          - name: DAR21
+            data_type: nvarchar
+          - name: DAT21
+            data_type: nvarchar
+          - name: DAT21_dato
+            data_type: date
+          - name: DAR22
+            data_type: nvarchar
+          - name: DAT22
+            data_type: nvarchar
+          - name: DAT22_dato
+            data_type: date
+          - name: DAR23
+            data_type: nvarchar
+          - name: DAT23
+            data_type: nvarchar
+          - name: DAT23_dato
+            data_type: date
+          - name: DAR24
+            data_type: nvarchar
+          - name: DAT24
+            data_type: nvarchar
+          - name: DAT24_dato
+            data_type: date
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0105
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: USRTY
+            data_type: nvarchar
+          - name: USRID
+            data_type: nvarchar
+          - name: USRID_LONG
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0185
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: ICTYP
+            data_type: nvarchar
+          - name: ICNUM
+            data_type: nvarchar
+          - name: ICOLD
+            data_type: nvarchar
+          - name: AUTH1
+            data_type: nvarchar
+          - name: DOCN1
+            data_type: nvarchar
+          - name: FPDAT
+            data_type: nvarchar
+          - name: EXPID
+            data_type: nvarchar
+          - name: ISSPL
+            data_type: nvarchar
+          - name: ISCOT
+            data_type: nvarchar
+          - name: IDCOT
+            data_type: nvarchar
+          - name: OVCHK
+            data_type: char
+          - name: ASTAT
+            data_type: char
+          - name: AKIND
+            data_type: char
+          - name: REJEC
+            data_type: nvarchar
+          - name: USEFR
+            data_type: nvarchar
+          - name: USETO
+            data_type: nvarchar
+          - name: DATEN
+            data_type: decimal
+          - name: DATEU
+            data_type: nvarchar
+          - name: TIMES
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0267
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: LGART
+            data_type: nvarchar
+          - name: OPKEN
+            data_type: char
+          - name: BETRG
+            data_type: decimal
+          - name: WAERS
+            data_type: nvarchar
+          - name: ANZHL
+            data_type: decimal
+          - name: ZEINH
+            data_type: nvarchar
+          - name: INDBW
+            data_type: char
+          - name: ZUORD
+            data_type: nvarchar
+          - name: ESTDT
+            data_type: nvarchar
+          - name: ESTDT_dato
+            data_type: date
+          - name: PABRJ
+            data_type: nvarchar
+          - name: PABRP
+            data_type: nvarchar
+          - name: UWDAT
+            data_type: nvarchar
+          - name: UWDAT_dato
+            data_type: date
+          - name: PAYTY
+            data_type: char
+          - name: PAYID
+            data_type: char
+          - name: OCRSN
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0302
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nchar
+          - name: PERNR
+            data_type: nchar
+          - name: SUBTY
+            data_type: nchar
+          - name: OBJPS
+            data_type: nchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nchar
+          - name: AEDTM
+            data_type: nchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nchar
+          - name: PREAS
+            data_type: nchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nchar
+          - name: RESE2
+            data_type: nchar
+          - name: GRPVL
+            data_type: nchar
+          - name: MASSN
+            data_type: nchar
+          - name: MASSG
+            data_type: nchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0416
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: QCTYP
+            data_type: nvarchar
+          - name: STYPE
+            data_type: char
+          - name: WAERS
+            data_type: nvarchar
+          - name: QTYPE
+            data_type: nvarchar
+          - name: SRULE
+            data_type: nvarchar
+          - name: NUMBR
+            data_type: decimal
+          - name: AMONT
+            data_type: decimal
+          - name: WGTYP
+            data_type: nvarchar
+          - name: QUONR
+            data_type: nvarchar
+          - name: DOCSY
+            data_type: nvarchar
+          - name: DOCNR
+            data_type: nvarchar
+          - name: NOPAY
+            data_type: char
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA0509
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: UPHDA
+            data_type: char
+          - name: REACD
+            data_type: nvarchar
+          - name: PERTG
+            data_type: decimal
+          - name: EMPCT
+            data_type: decimal
+          - name: SAIND
+            data_type: char
+          - name: SADAT
+            data_type: nvarchar
+          - name: SADAT_dato
+            data_type: date
+          - name: CTHFD
+            data_type: char
+          - name: CTAPP
+            data_type: char
+          - name: DISHF
+            data_type: char
+          - name: VPERN
+            data_type: nvarchar
+          - name: DRVAL
+            data_type: char
+          - name: INVAL
+            data_type: char
+          - name: PLANS
+            data_type: nvarchar
+          - name: WERKS
+            data_type: nvarchar
+          - name: BTRTL
+            data_type: nvarchar
+          - name: PERSG
+            data_type: char
+          - name: PERSK
+            data_type: nvarchar
+          - name: TRFAR
+            data_type: nvarchar
+          - name: TRFGB
+            data_type: nvarchar
+          - name: TRFGR
+            data_type: nvarchar
+          - name: TRFST
+            data_type: nvarchar
+          - name: HLG01
+            data_type: nvarchar
+          - name: HAJ01
+            data_type: decimal
+          - name: HLG02
+            data_type: nvarchar
+          - name: HAJ02
+            data_type: decimal
+          - name: HLG03
+            data_type: nvarchar
+          - name: HAJ03
+            data_type: decimal
+          - name: HLG04
+            data_type: nvarchar
+          - name: HAJ04
+            data_type: decimal
+          - name: HLG05
+            data_type: nvarchar
+          - name: HAJ05
+            data_type: decimal
+          - name: HLG06
+            data_type: nvarchar
+          - name: HAJ06
+            data_type: decimal
+          - name: HLG07
+            data_type: nvarchar
+          - name: HAJ07
+            data_type: decimal
+          - name: HLG08
+            data_type: nvarchar
+          - name: HAJ08
+            data_type: decimal
+          - name: HLG09
+            data_type: nvarchar
+          - name: HAJ09
+            data_type: decimal
+          - name: HLG10
+            data_type: nvarchar
+          - name: HAJ10
+            data_type: decimal
+          - name: HLG11
+            data_type: nvarchar
+          - name: HAJ11
+            data_type: decimal
+          - name: HLG12
+            data_type: nvarchar
+          - name: HAJ12
+            data_type: decimal
+          - name: HLG13
+            data_type: nvarchar
+          - name: HAJ13
+            data_type: decimal
+          - name: HLG14
+            data_type: nvarchar
+          - name: HAJ14
+            data_type: decimal
+          - name: HLG15
+            data_type: nvarchar
+          - name: HAJ15
+            data_type: decimal
+          - name: HLG16
+            data_type: nvarchar
+          - name: HAJ16
+            data_type: decimal
+          - name: HLG17
+            data_type: nvarchar
+          - name: HAJ17
+            data_type: decimal
+          - name: HLG18
+            data_type: nvarchar
+          - name: HAJ18
+            data_type: decimal
+          - name: HLG19
+            data_type: nvarchar
+          - name: HAJ19
+            data_type: decimal
+          - name: HLG20
+            data_type: nvarchar
+          - name: HAJ20
+            data_type: decimal
+          - name: NLG01
+            data_type: nvarchar
+          - name: NAJ01
+            data_type: decimal
+          - name: NLG02
+            data_type: nvarchar
+          - name: NAJ02
+            data_type: decimal
+          - name: NLG03
+            data_type: nvarchar
+          - name: NAJ03
+            data_type: decimal
+          - name: NLG04
+            data_type: nvarchar
+          - name: NAJ04
+            data_type: decimal
+          - name: NLG05
+            data_type: nvarchar
+          - name: NAJ05
+            data_type: decimal
+          - name: NLG06
+            data_type: nvarchar
+          - name: NAJ06
+            data_type: decimal
+          - name: NLG07
+            data_type: nvarchar
+          - name: NAJ07
+            data_type: decimal
+          - name: NLG08
+            data_type: nvarchar
+          - name: NAJ08
+            data_type: decimal
+          - name: NLG09
+            data_type: nvarchar
+          - name: NAJ09
+            data_type: decimal
+          - name: NLG10
+            data_type: nvarchar
+          - name: NAJ10
+            data_type: decimal
+          - name: NLG11
+            data_type: nvarchar
+          - name: NAJ11
+            data_type: decimal
+          - name: NLG12
+            data_type: nvarchar
+          - name: NAJ12
+            data_type: decimal
+          - name: NLG13
+            data_type: nvarchar
+          - name: NAJ13
+            data_type: decimal
+          - name: NLG14
+            data_type: nvarchar
+          - name: NAJ14
+            data_type: decimal
+          - name: NLG15
+            data_type: nvarchar
+          - name: NAJ15
+            data_type: decimal
+          - name: NLG16
+            data_type: nvarchar
+          - name: NAJ16
+            data_type: decimal
+          - name: NLG17
+            data_type: nvarchar
+          - name: NAJ17
+            data_type: decimal
+          - name: NLG18
+            data_type: nvarchar
+          - name: NAJ18
+            data_type: decimal
+          - name: NLG19
+            data_type: nvarchar
+          - name: NAJ19
+            data_type: decimal
+          - name: NLG20
+            data_type: nvarchar
+          - name: NAJ20
+            data_type: decimal
+          - name: WAERS
+            data_type: nvarchar
+          - name: CDRNO
+            data_type: decimal
+          - name: CDRHD
+            data_type: decimal
+          - name: OWHDADE
+            data_type: char
+          - name: HDHRSDE
+            data_type: decimal
+          - name: PERCTDE
+            data_type: decimal
+          - name: TRFARDE
+            data_type: nvarchar
+          - name: TRFGBDE
+            data_type: nvarchar
+          - name: TRFGRDE
+            data_type: nvarchar
+          - name: TRFSTDE
+            data_type: nvarchar
+          - name: RULNODE
+            data_type: nvarchar
+          - name: TRFSTDEDI
+            data_type: nvarchar
+          - name: ACTPE
+            data_type: char
+          - name: SENOR
+            data_type: nvarchar
+          - name: SENOR_dato
+            data_type: date
+          - name: MUNIC
+            data_type: nvarchar
+          - name: STELL
+            data_type: nvarchar
+          - name: ORGEH
+            data_type: nvarchar
+          - name: UFALG
+            data_type: char
+          - name: FALLG
+            data_type: char
+          - name: MERKS
+            data_type: char
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA2001
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: BEGUZ
+            data_type: nvarchar
+          - name: BEGUZ_tid
+            data_type: time
+          - name: ENDUZ
+            data_type: nvarchar
+          - name: ENDUZ_tid
+            data_type: time
+          - name: VTKEN
+            data_type: nchar
+          - name: AWART
+            data_type: nvarchar
+          - name: ABWTG
+            data_type: nvarchar
+          - name: STDAZ
+            data_type: nvarchar
+          - name: ABRTG
+            data_type: nvarchar
+          - name: ABRST
+            data_type: nvarchar
+          - name: ANRTG
+            data_type: nvarchar
+          - name: LFZED
+            data_type: nvarchar
+          - name: LFZED_dato
+            data_type: date
+          - name: KRGED
+            data_type: nvarchar
+          - name: KRGED_dato
+            data_type: date
+          - name: KBBEG
+            data_type: nvarchar
+          - name: KBBEG_dato
+            data_type: date
+          - name: RMDDA
+            data_type: nvarchar
+          - name: RMDDA_dato
+            data_type: date
+          - name: KENN1
+            data_type: nvarchar
+          - name: KENN2
+            data_type: nvarchar
+          - name: KALTG
+            data_type: nvarchar
+          - name: URMAN
+            data_type: nchar
+          - name: BEGVA
+            data_type: nvarchar
+          - name: BWGRL
+            data_type: nvarchar
+          - name: AUFKZ
+            data_type: nchar
+          - name: TRFGR
+            data_type: nvarchar
+          - name: TRFST
+            data_type: nvarchar
+          - name: PRAKN
+            data_type: nvarchar
+          - name: PRAKZ
+            data_type: nvarchar
+          - name: OTYPE
+            data_type: nvarchar
+          - name: PLANS
+            data_type: nvarchar
+          - name: MLDDA
+            data_type: nvarchar
+          - name: MLDDA_dato
+            data_type: date
+          - name: MLDUZ
+            data_type: nvarchar
+          - name: MLDUZ_tid
+            data_type: time
+          - name: RMDUZ
+            data_type: nvarchar
+          - name: RMDUZ_tid
+            data_type: time
+          - name: VORGS
+            data_type: nvarchar
+          - name: UMSKD
+            data_type: nvarchar
+          - name: UMSCH
+            data_type: nvarchar
+          - name: REFNR
+            data_type: nvarchar
+          - name: UNFAL
+            data_type: nchar
+          - name: STKRV
+            data_type: nvarchar
+          - name: STUND
+            data_type: nvarchar
+          - name: PSARB
+            data_type: nvarchar
+          - name: AINFT
+            data_type: nvarchar
+          - name: GENER
+            data_type: nchar
+          - name: HRSIF
+            data_type: nchar
+          - name: ALLDF
+            data_type: nchar
+          - name: WAERS
+            data_type: nvarchar
+          - name: LOGSYS
+            data_type: nvarchar
+          - name: AWTYP
+            data_type: nvarchar
+          - name: AWREF
+            data_type: nvarchar
+          - name: AWORG
+            data_type: nvarchar
+          - name: DOCSY
+            data_type: nvarchar
+          - name: DOCNR
+            data_type: nvarchar
+          - name: PAYTY
+            data_type: nchar
+          - name: PAYID
+            data_type: nchar
+          - name: BONDT
+            data_type: nvarchar
+          - name: BONDT_dato
+            data_type: date
+          - name: OCRSN
+            data_type: nvarchar
+          - name: SPPE1
+            data_type: nvarchar
+          - name: SPPE1_dato
+            data_type: date
+          - name: SPPE2
+            data_type: nvarchar
+          - name: SPPE2_dato
+            data_type: date
+          - name: SPPE3
+            data_type: nvarchar
+          - name: SPPE3_dato
+            data_type: date
+          - name: SPPIN
+            data_type: nchar
+          - name: ZKMKT
+            data_type: nchar
+          - name: FAPRS
+            data_type: nvarchar
+          - name: TDLANGU
+            data_type: nvarchar
+          - name: TDSUBLA
+            data_type: nvarchar
+          - name: TDTYPE
+            data_type: nvarchar
+          - name: NXDFL
+            data_type: nchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA2002
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nchar
+          - name: PREAS
+            data_type: nchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nchar
+          - name: RESE2
+            data_type: nchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: BEGUZ
+            data_type: nvarchar
+          - name: ENDUZ
+            data_type: nvarchar
+          - name: VTKEN
+            data_type: nchar
+          - name: AWART
+            data_type: nvarchar
+          - name: ABWTG
+            data_type: nvarchar
+          - name: ABRTG
+            data_type: nvarchar
+          - name: ABRST
+            data_type: nvarchar
+          - name: KALTG
+            data_type: nvarchar
+          - name: STDAZ
+            data_type: nvarchar
+          - name: LGART
+            data_type: nvarchar
+          - name: BWGRL
+            data_type: nvarchar
+          - name: AUFKZ
+            data_type: nchar
+          - name: VERSL
+            data_type: nchar
+          - name: TRFGR
+            data_type: nvarchar
+          - name: TRFST
+            data_type: nvarchar
+          - name: PRAKN
+            data_type: nvarchar
+          - name: PRAKZ
+            data_type: nvarchar
+          - name: OTYPE
+            data_type: nvarchar
+          - name: PLANS
+            data_type: nvarchar
+          - name: GENER
+            data_type: nchar
+          - name: EXBEL
+            data_type: nvarchar
+          - name: HRSIF
+            data_type: nchar
+          - name: ALLDF
+            data_type: nchar
+          - name: WAERS
+            data_type: nvarchar
+          - name: LOGSYS
+            data_type: nvarchar
+          - name: AWTYP
+            data_type: nvarchar
+          - name: AWREF
+            data_type: nvarchar
+          - name: AWORG
+            data_type: nvarchar
+          - name: DOCSY
+            data_type: nvarchar
+          - name: DOCNR
+            data_type: nvarchar
+          - name: WTART
+            data_type: nvarchar
+          - name: FAPRS
+            data_type: nvarchar
+          - name: TDLANGU
+            data_type: nvarchar
+          - name: TDSUBLA
+            data_type: nvarchar
+          - name: TDTYPE
+            data_type: nvarchar
+          - name: KEPAU
+            data_type: nchar
+          - name: EXPAU
+            data_type: nchar
+          - name: PBEG1
+            data_type: nvarchar
+          - name: PEND1
+            data_type: nvarchar
+          - name: PBEZ1
+            data_type: nvarchar
+          - name: PUNB1
+            data_type: nvarchar
+          - name: PBEG2
+            data_type: nvarchar
+          - name: PEND2
+            data_type: nvarchar
+          - name: PBEZ2
+            data_type: nvarchar
+          - name: PUNB2
+            data_type: nvarchar
+          - name: NXDFL
+            data_type: nchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA2005
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: BEGUZ
+            data_type: nvarchar
+          - name: ENDUZ
+            data_type: nvarchar
+          - name: VTKEN
+            data_type: char
+          - name: STDAZ
+            data_type: decimal
+          - name: PBEG1
+            data_type: nvarchar
+          - name: PEND1
+            data_type: nvarchar
+          - name: PBEZ1
+            data_type: decimal
+          - name: PUNB1
+            data_type: decimal
+          - name: PBEG2
+            data_type: nvarchar
+          - name: PEND2
+            data_type: nvarchar
+          - name: PBEZ2
+            data_type: decimal
+          - name: PUNB2
+            data_type: decimal
+          - name: PBEG3
+            data_type: nvarchar
+          - name: PEND3
+            data_type: nvarchar
+          - name: PBEZ3
+            data_type: decimal
+          - name: PUNB3
+            data_type: decimal
+          - name: PBEG4
+            data_type: nvarchar
+          - name: PEND4
+            data_type: nvarchar
+          - name: PBEZ4
+            data_type: decimal
+          - name: PUNB4
+            data_type: decimal
+          - name: VERSL
+            data_type: char
+          - name: AUFKZ
+            data_type: char
+          - name: BWGRL
+            data_type: decimal
+          - name: TRFGR
+            data_type: nvarchar
+          - name: TRFST
+            data_type: nvarchar
+          - name: PRAKN
+            data_type: nvarchar
+          - name: PRAKZ
+            data_type: nvarchar
+          - name: OTYPE
+            data_type: nvarchar
+          - name: PLANS
+            data_type: nvarchar
+          - name: EXBEL
+            data_type: nvarchar
+          - name: HRSIF
+            data_type: char
+          - name: WAERS
+            data_type: nvarchar
+          - name: WTART
+            data_type: nvarchar
+          - name: TDLANGU
+            data_type: nvarchar
+          - name: TDSUBLA
+            data_type: nvarchar
+          - name: TDTYPE
+            data_type: nvarchar
+      - name: PA2006
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: BEGUZ
+            data_type: nvarchar
+          - name: ENDUZ
+            data_type: nvarchar
+          - name: VTKEN
+            data_type: char
+          - name: KTART
+            data_type: nvarchar
+          - name: ANZHL
+            data_type: decimal
+          - name: KVERB
+            data_type: decimal
+          - name: QUONR
+            data_type: nvarchar
+          - name: DESTA
+            data_type: nvarchar
+          - name: DESTA_dato
+            data_type: date
+          - name: DEEND
+            data_type: nvarchar
+          - name: DEEND_dato
+            data_type: date
+          - name: QUOSY
+            data_type: nvarchar
+          - name: TDLANGU
+            data_type: nvarchar
+          - name: TDSUBLA
+            data_type: nvarchar
+          - name: TDTYPE
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA2010
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: BEGUZ
+            data_type: nvarchar
+          - name: BEGUZ_tid
+            data_type: time
+          - name: ENDUZ
+            data_type: nvarchar
+          - name: ENDUZ_tid
+            data_type: time
+          - name: VTKEN
+            data_type: nchar
+          - name: STDAZ
+            data_type: nvarchar
+          - name: LGART
+            data_type: nvarchar
+          - name: ANZHL
+            data_type: decimal
+          - name: ZEINH
+            data_type: nvarchar
+          - name: BWGRL
+            data_type: nvarchar
+          - name: AUFKZ
+            data_type: nchar
+          - name: BETRG
+            data_type: nvarchar
+          - name: ENDOF
+            data_type: nchar
+          - name: UFLD1
+            data_type: nchar
+          - name: UFLD2
+            data_type: nchar
+          - name: UFLD3
+            data_type: nchar
+          - name: KEYPR
+            data_type: nvarchar
+          - name: TRFGR
+            data_type: nvarchar
+          - name: TRFST
+            data_type: nvarchar
+          - name: PRAKN
+            data_type: nvarchar
+          - name: PRAKZ
+            data_type: nvarchar
+          - name: OTYPE
+            data_type: nvarchar
+          - name: PLANS
+            data_type: nvarchar
+          - name: VERSL
+            data_type: nchar
+          - name: EXBEL
+            data_type: nvarchar
+          - name: WAERS
+            data_type: nvarchar
+          - name: LOGSYS
+            data_type: nvarchar
+          - name: AWTYP
+            data_type: nvarchar
+          - name: AWREF
+            data_type: nvarchar
+          - name: AWORG
+            data_type: nvarchar
+          - name: WTART
+            data_type: nvarchar
+          - name: TDLANGU
+            data_type: nvarchar
+          - name: TDSUBLA
+            data_type: nvarchar
+          - name: TDTYPE
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA2012
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: BEGUZ
+            data_type: nvarchar
+          - name: ENDUZ
+            data_type: nvarchar
+          - name: VTKEN
+            data_type: char
+          - name: ZTART
+            data_type: nvarchar
+          - name: ANZHL
+            data_type: decimal
+          - name: ATIME
+            data_type: nvarchar
+          - name: TDLANGU
+            data_type: nvarchar
+          - name: TDSUBLA
+            data_type: nvarchar
+          - name: TDTYPE
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA2013
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: BEGUZ
+            data_type: nvarchar
+          - name: ENDUZ
+            data_type: nvarchar
+          - name: VTKEN
+            data_type: char
+          - name: KTART
+            data_type: nvarchar
+          - name: ACCNU
+            data_type: decimal
+          - name: ACCOP
+            data_type: char
+          - name: ACCTR
+            data_type: char
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA3363
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nvarchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: char
+          - name: ITXEX
+            data_type: char
+          - name: REFEX
+            data_type: char
+          - name: ORDEX
+            data_type: char
+          - name: ITBLD
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: FLAG1
+            data_type: char
+          - name: FLAG2
+            data_type: char
+          - name: FLAG3
+            data_type: char
+          - name: FLAG4
+            data_type: char
+          - name: RESE1
+            data_type: nvarchar
+          - name: RESE2
+            data_type: nvarchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: AINFO
+            data_type: nvarchar
+          - name: FVERS
+            data_type: nvarchar
+          - name: AIVER
+            data_type: nvarchar
+          - name: FID01
+            data_type: nvarchar
+          - name: ATV01
+            data_type: nvarchar
+          - name: FID02
+            data_type: nvarchar
+          - name: ATV02
+            data_type: nvarchar
+          - name: FID03
+            data_type: nvarchar
+          - name: ATV03
+            data_type: nvarchar
+          - name: FID04
+            data_type: nvarchar
+          - name: ATV04
+            data_type: nvarchar
+          - name: FID05
+            data_type: nvarchar
+          - name: ATV05
+            data_type: nvarchar
+          - name: FID06
+            data_type: nvarchar
+          - name: ATV06
+            data_type: nvarchar
+          - name: FID07
+            data_type: nvarchar
+          - name: ATV07
+            data_type: nvarchar
+          - name: FID08
+            data_type: nvarchar
+          - name: ATV08
+            data_type: nvarchar
+          - name: FID09
+            data_type: nvarchar
+          - name: ATV09
+            data_type: nvarchar
+          - name: FID10
+            data_type: nvarchar
+          - name: ATV10
+            data_type: nvarchar
+          - name: FID11
+            data_type: nvarchar
+          - name: ATV11
+            data_type: nvarchar
+          - name: FID12
+            data_type: nvarchar
+          - name: ATV12
+            data_type: nvarchar
+          - name: FID13
+            data_type: nvarchar
+          - name: ATV13
+            data_type: nvarchar
+          - name: FID14
+            data_type: nvarchar
+          - name: ATV14
+            data_type: nvarchar
+          - name: FID15
+            data_type: nvarchar
+          - name: ATV15
+            data_type: nvarchar
+          - name: FID16
+            data_type: nvarchar
+          - name: ATV16
+            data_type: nvarchar
+          - name: FID17
+            data_type: nvarchar
+          - name: ATV17
+            data_type: nvarchar
+          - name: FID18
+            data_type: nvarchar
+          - name: ATV18
+            data_type: nvarchar
+          - name: FID19
+            data_type: nvarchar
+          - name: ATV19
+            data_type: nvarchar
+          - name: FID20
+            data_type: nvarchar
+          - name: ATV20
+            data_type: nvarchar
+          - name: FID21
+            data_type: nvarchar
+          - name: ATV21
+            data_type: nvarchar
+          - name: FID22
+            data_type: nvarchar
+          - name: ATV22
+            data_type: nvarchar
+          - name: FID23
+            data_type: nvarchar
+          - name: ATV23
+            data_type: nvarchar
+          - name: FID24
+            data_type: nvarchar
+          - name: ATV24
+            data_type: nvarchar
+          - name: FID25
+            data_type: nvarchar
+          - name: ATV25
+            data_type: nvarchar
+          - name: FID26
+            data_type: nvarchar
+          - name: ATV26
+            data_type: nvarchar
+          - name: FID27
+            data_type: nvarchar
+          - name: ATV27
+            data_type: nvarchar
+          - name: FID28
+            data_type: nvarchar
+          - name: ATV28
+            data_type: nvarchar
+          - name: FID29
+            data_type: nvarchar
+          - name: ATV29
+            data_type: nvarchar
+          - name: FID30
+            data_type: nvarchar
+          - name: ATV30
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA9001
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERNR
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: OBJPS
+            data_type: nvarchar
+          - name: SPRPS
+            data_type: nchar
+          - name: ENDDA
+            data_type: nchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: SEQNR
+            data_type: nvarchar
+          - name: AEDTM
+            data_type: nchar
+          - name: AEDTM_dato
+            data_type: date
+          - name: UNAME
+            data_type: nvarchar
+          - name: HISTO
+            data_type: nchar
+          - name: ITXEX
+            data_type: nchar
+          - name: REFEX
+            data_type: nchar
+          - name: ORDEX
+            data_type: nchar
+          - name: ITBLD
+            data_type: nchar
+          - name: PREAS
+            data_type: nchar
+          - name: FLAG1
+            data_type: nchar
+          - name: FLAG2
+            data_type: nchar
+          - name: FLAG3
+            data_type: nchar
+          - name: FLAG4
+            data_type: nchar
+          - name: RESE1
+            data_type: nchar
+          - name: RESE2
+            data_type: nchar
+          - name: GRPVL
+            data_type: nvarchar
+          - name: PLANS
+            data_type: nvarchar
+          - name: STELL
+            data_type: nvarchar
+          - name: ORGEH
+            data_type: nvarchar
+          - name: WERKS
+            data_type: nvarchar
+          - name: BTRTL
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: PA9010
+        columns: []
+      - name: PA9013
+        columns: []
+      - name: PA9024
+        columns: []
+      - name: PA9030
+        columns: []
+      - name: PA9040
+        columns: []
+      - name: PA9052
+        columns: []
+      - name: PDSNR
+        columns: []
+      - name: PTRV_HEAD
+        columns: []
+      - name: PTRV_PERIO
+        columns: []
+      - name: T002T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: SPRAS
+            data_type: char
+          - name: SPRSL
+            data_type: char
+          - name: SPTXT
+            data_type: nvarchar
+      - name: T005
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: LAND1
+            data_type: nvarchar
+          - name: LANDK
+            data_type: nvarchar
+          - name: LNPLZ
+            data_type: nvarchar
+          - name: PRPLZ
+            data_type: char
+          - name: ADDRS
+            data_type: nvarchar
+          - name: XPLZS
+            data_type: char
+          - name: XPLPF
+            data_type: char
+          - name: SPRAS
+            data_type: char
+          - name: XLAND
+            data_type: char
+          - name: XADDR
+            data_type: char
+          - name: NMFMT
+            data_type: nvarchar
+          - name: XREGS
+            data_type: char
+          - name: XPLST
+            data_type: char
+          - name: INTCA
+            data_type: nvarchar
+          - name: INTCA3
+            data_type: nvarchar
+          - name: INTCN3
+            data_type: nvarchar
+          - name: XEGLD
+            data_type: char
+          - name: XSKFN
+            data_type: char
+          - name: XMWSN
+            data_type: char
+          - name: LNBKN
+            data_type: nvarchar
+          - name: PRBKN
+            data_type: char
+          - name: LNBLZ
+            data_type: nvarchar
+          - name: PRBLZ
+            data_type: char
+          - name: LNPSK
+            data_type: nvarchar
+          - name: PRPSK
+            data_type: char
+          - name: XPRBK
+            data_type: char
+          - name: BNKEY
+            data_type: char
+          - name: LNBKS
+            data_type: nvarchar
+          - name: PRBKS
+            data_type: char
+          - name: XPRSO
+            data_type: char
+          - name: PRUIN
+            data_type: char
+          - name: UINLN
+            data_type: nvarchar
+          - name: LNST1
+            data_type: nvarchar
+          - name: PRST1
+            data_type: char
+          - name: LNST2
+            data_type: nvarchar
+          - name: PRST2
+            data_type: char
+          - name: LNST3
+            data_type: nvarchar
+          - name: PRST3
+            data_type: char
+          - name: LNST4
+            data_type: nvarchar
+          - name: PRST4
+            data_type: char
+          - name: LNST5
+            data_type: nvarchar
+          - name: PRST5
+            data_type: char
+          - name: LANDD
+            data_type: nvarchar
+          - name: KALSM
+            data_type: nvarchar
+          - name: LANDA
+            data_type: nvarchar
+          - name: WECHF
+            data_type: nvarchar
+          - name: LKVRZ
+            data_type: nvarchar
+          - name: INTCN
+            data_type: nvarchar
+          - name: XDEZP
+            data_type: char
+          - name: DATFM
+            data_type: char
+          - name: CURIN
+            data_type: nvarchar
+          - name: CURHA
+            data_type: nvarchar
+          - name: WAERS
+            data_type: nvarchar
+          - name: KURST
+            data_type: nvarchar
+          - name: AFAPL
+            data_type: nvarchar
+          - name: GWGWRT
+            data_type: decimal
+          - name: UMRWRT
+            data_type: decimal
+          - name: KZRBWB
+            data_type: char
+          - name: XANZUM
+            data_type: char
+          - name: CTNCONCEPT
+            data_type: nvarchar
+          - name: KZSRV
+            data_type: char
+          - name: XXINVE
+            data_type: char
+          - name: SUREG
+            data_type: nvarchar
+          - name: XGCCV
+            data_type: nvarchar
+          - name: LANDGRP_VP
+            data_type: nvarchar
+      - name: T005T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRAS
+            data_type: char
+          - name: LAND1
+            data_type: nvarchar
+          - name: LANDX
+            data_type: nvarchar
+          - name: NATIO
+            data_type: nvarchar
+          - name: LANDX50
+            data_type: nvarchar
+          - name: NATIO50
+            data_type: nvarchar
+          - name: PRQ_SPREGT
+            data_type: nvarchar
+      - name: T500P
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nchar
+          - name: PERSA
+            data_type: nchar
+          - name: MOLGA
+            data_type: nchar
+          - name: NAME1
+            data_type: nchar
+          - name: NAME2
+            data_type: nchar
+          - name: STRAS
+            data_type: nchar
+          - name: PFACH
+            data_type: nchar
+          - name: PSTLZ
+            data_type: nchar
+          - name: ORT01
+            data_type: nchar
+          - name: LAND1
+            data_type: nchar
+          - name: REGIO
+            data_type: nchar
+          - name: COUNC
+            data_type: nchar
+          - name: CITYC
+            data_type: nchar
+          - name: ADRNR
+            data_type: nchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: T501
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERSG
+            data_type: char
+      - name: T501T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nchar
+          - name: SPRSL
+            data_type: char
+          - name: PERSG
+            data_type: char
+          - name: PTEXT
+            data_type: nchar
+      - name: T503K
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: PERSK
+            data_type: nvarchar
+      - name: T503T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nchar
+          - name: SPRSL
+            data_type: char
+          - name: PERSK
+            data_type: nchar
+          - name: PTEXT
+            data_type: nchar
+      - name: T510
+        columns: []
+      - name: T510A
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nchar
+          - name: MOLGA
+            data_type: nchar
+          - name: TRFAR
+            data_type: nchar
+          - name: TARTX
+            data_type: nchar
+          - name: ITRFA
+            data_type: nchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: T510G
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: MOLGA
+            data_type: nvarchar
+          - name: TRFGB
+            data_type: nvarchar
+          - name: TGBTX
+            data_type: nvarchar
+      - name: T510J
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: MOLGA
+            data_type: nvarchar
+          - name: MODIF
+            data_type: nvarchar
+          - name: LGART
+            data_type: nvarchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: WERT1
+            data_type: decimal
+      - name: T511
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: MOLGA
+            data_type: nvarchar
+          - name: LGART
+            data_type: nvarchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: ABTYZ
+            data_type: nvarchar
+          - name: WKTYZ
+            data_type: nvarchar
+          - name: OPKEN
+            data_type: char
+          - name: ZEINH
+            data_type: nvarchar
+          - name: KOMBI
+            data_type: char
+          - name: BTMIN
+            data_type: nvarchar
+          - name: BTMAX
+            data_type: nvarchar
+          - name: ADSUM
+            data_type: char
+          - name: MODNA
+            data_type: nvarchar
+          - name: MODSP
+            data_type: nvarchar
+          - name: RUTYP
+            data_type: char
+          - name: RUDIV
+            data_type: nvarchar
+          - name: ADDJN
+            data_type: char
+          - name: MOD01
+            data_type: char
+          - name: MOD02
+            data_type: char
+          - name: MOD03
+            data_type: char
+          - name: ANMIN
+            data_type: decimal
+          - name: ANMAX
+            data_type: decimal
+      - name: T512T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nchar
+          - name: SPRSL
+            data_type: char
+          - name: MOLGA
+            data_type: nchar
+          - name: LGART
+            data_type: nchar
+          - name: LGTXT
+            data_type: nvarchar
+          - name: KZTXT
+            data_type: nvarchar
+          - name: BUKRS
+            data_type: nvarchar
+      - name: T512W
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: MOLGA
+            data_type: nvarchar
+          - name: LGART
+            data_type: nvarchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: GVBLA
+            data_type: nvarchar
+          - name: GVALA
+            data_type: nvarchar
+          - name: GVPRO
+            data_type: decimal
+          - name: PZBLA
+            data_type: nvarchar
+          - name: PZALA
+            data_type: nvarchar
+          - name: PZPRO
+            data_type: decimal
+          - name: FZBLA
+            data_type: nvarchar
+          - name: FZALA
+            data_type: nvarchar
+          - name: FZPRO
+            data_type: decimal
+          - name: VKLAS
+            data_type: nvarchar
+          - name: KUMUL
+            data_type: varbinary
+          - name: D1AUS
+            data_type: varbinary
+          - name: D1KUM
+            data_type: varbinary
+          - name: D1PRO
+            data_type: decimal
+          - name: D2AUS
+            data_type: varbinary
+          - name: D2KUM
+            data_type: varbinary
+          - name: D2PRO
+            data_type: decimal
+          - name: D3AUS
+            data_type: varbinary
+          - name: D3KUM
+            data_type: varbinary
+          - name: D3PRO
+            data_type: decimal
+          - name: D4AUS
+            data_type: varbinary
+          - name: D4KUM
+            data_type: varbinary
+          - name: D4PRO
+            data_type: decimal
+          - name: D5AUS
+            data_type: varbinary
+          - name: D5KUM
+            data_type: varbinary
+          - name: D5PRO
+            data_type: decimal
+          - name: AKLAS
+            data_type: nvarchar
+      - name: T513S
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: char
+          - name: STELL
+            data_type: nvarchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: STLTX
+            data_type: nvarchar
+          - name: MAINT
+            data_type: char
+      - name: T518B
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: LANGU
+            data_type: char
+          - name: AUSBI
+            data_type: nvarchar
+          - name: ATEXT
+            data_type: nvarchar
+      - name: T527X
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: char
+          - name: ORGEH
+            data_type: nvarchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: ORGTX
+            data_type: nvarchar
+          - name: MAINT
+            data_type: char
+          - name: BUKRS
+            data_type: nvarchar
+      - name: T529T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: char
+          - name: MASSN
+            data_type: nchar
+          - name: MNTXT
+            data_type: nchar
+      - name: T529U
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: char
+          - name: STATN
+            data_type: char
+          - name: STATV
+            data_type: char
+          - name: TEXT1
+            data_type: nvarchar
+      - name: T530E
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: INFTY
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+      - name: T530F
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: char
+          - name: INFTY
+            data_type: nvarchar
+          - name: PREAS
+            data_type: nvarchar
+          - name: RTEXT
+            data_type: nvarchar
+      - name: T530T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: char
+          - name: MASSN
+            data_type: nchar
+          - name: MASSG
+            data_type: nchar
+          - name: MGTXT
+            data_type: nchar
+      - name: T531S
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nchar
+          - name: SPRSL
+            data_type: char
+          - name: TMART
+            data_type: nchar
+          - name: TMTXT
+            data_type: nchar
+      - name: T538A
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: ZEINH
+            data_type: nvarchar
+          - name: MSEHI
+            data_type: nvarchar
+      - name: T538T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: char
+          - name: ZEINH
+            data_type: nvarchar
+          - name: ETEXT
+            data_type: nvarchar
+          - name: SHTXT
+            data_type: nvarchar
+      - name: T542T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRAS
+            data_type: char
+          - name: MOLGA
+            data_type: nvarchar
+          - name: ANSVH
+            data_type: nvarchar
+          - name: ATX
+            data_type: nvarchar
+      - name: T548T
+        columns: []
+      - name: T554C
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: MOLGA
+            data_type: nvarchar
+          - name: MODIF
+            data_type: nvarchar
+          - name: KLBEW
+            data_type: nvarchar
+          - name: OCABS
+            data_type: char
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: KLS01
+            data_type: nvarchar
+          - name: REF01
+            data_type: char
+          - name: PRC01
+            data_type: decimal
+          - name: DRC01
+            data_type: nvarchar
+          - name: KLS02
+            data_type: nvarchar
+          - name: REF02
+            data_type: char
+          - name: PRC02
+            data_type: decimal
+          - name: DRC02
+            data_type: nvarchar
+          - name: KLS03
+            data_type: nvarchar
+          - name: REF03
+            data_type: char
+          - name: PRC03
+            data_type: decimal
+          - name: DRC03
+            data_type: nvarchar
+          - name: KLS04
+            data_type: nvarchar
+          - name: REF04
+            data_type: char
+          - name: PRC04
+            data_type: decimal
+          - name: DRC04
+            data_type: nvarchar
+          - name: KLS05
+            data_type: nvarchar
+          - name: REF05
+            data_type: char
+          - name: PRC05
+            data_type: decimal
+          - name: DRC05
+            data_type: nvarchar
+          - name: KLS06
+            data_type: nvarchar
+          - name: REF06
+            data_type: char
+          - name: PRC06
+            data_type: decimal
+          - name: DRC06
+            data_type: nvarchar
+          - name: KLS07
+            data_type: nvarchar
+          - name: REF07
+            data_type: char
+          - name: PRC07
+            data_type: decimal
+          - name: DRC07
+            data_type: nvarchar
+          - name: KLS08
+            data_type: nvarchar
+          - name: REF08
+            data_type: char
+          - name: PRC08
+            data_type: decimal
+          - name: DRC08
+            data_type: nvarchar
+          - name: KLS09
+            data_type: nvarchar
+          - name: REF09
+            data_type: char
+          - name: PRC09
+            data_type: decimal
+          - name: DRC09
+            data_type: nvarchar
+          - name: KLS10
+            data_type: nvarchar
+          - name: REF10
+            data_type: char
+          - name: PRC10
+            data_type: decimal
+          - name: DRC10
+            data_type: nvarchar
+          - name: TIM01
+            data_type: char
+          - name: TPR01
+            data_type: decimal
+          - name: UNT01
+            data_type: nvarchar
+          - name: SPL01
+            data_type: char
+          - name: LGA01
+            data_type: nvarchar
+          - name: DRW01
+            data_type: nvarchar
+          - name: TIM02
+            data_type: char
+          - name: TPR02
+            data_type: decimal
+          - name: UNT02
+            data_type: nvarchar
+          - name: SPL02
+            data_type: char
+          - name: LGA02
+            data_type: nvarchar
+          - name: DRW02
+            data_type: nvarchar
+          - name: TIM03
+            data_type: char
+          - name: TPR03
+            data_type: decimal
+          - name: UNT03
+            data_type: nvarchar
+          - name: SPL03
+            data_type: char
+          - name: LGA03
+            data_type: nvarchar
+          - name: DRW03
+            data_type: nvarchar
+          - name: TIM04
+            data_type: char
+          - name: TPR04
+            data_type: decimal
+          - name: UNT04
+            data_type: nvarchar
+          - name: SPL04
+            data_type: char
+          - name: LGA04
+            data_type: nvarchar
+          - name: DRW04
+            data_type: nvarchar
+          - name: TIM05
+            data_type: char
+          - name: TPR05
+            data_type: decimal
+          - name: UNT05
+            data_type: nvarchar
+          - name: SPL05
+            data_type: char
+          - name: LGA05
+            data_type: nvarchar
+          - name: DRW05
+            data_type: nvarchar
+          - name: TIM06
+            data_type: char
+          - name: TPR06
+            data_type: decimal
+          - name: UNT06
+            data_type: nvarchar
+          - name: SPL06
+            data_type: char
+          - name: LGA06
+            data_type: nvarchar
+          - name: DRW06
+            data_type: nvarchar
+          - name: TIM07
+            data_type: char
+          - name: TPR07
+            data_type: decimal
+          - name: UNT07
+            data_type: nvarchar
+          - name: SPL07
+            data_type: char
+          - name: LGA07
+            data_type: nvarchar
+          - name: DRW07
+            data_type: nvarchar
+          - name: TIM08
+            data_type: char
+          - name: TPR08
+            data_type: decimal
+          - name: UNT08
+            data_type: nvarchar
+          - name: SPL08
+            data_type: char
+          - name: LGA08
+            data_type: nvarchar
+          - name: DRW08
+            data_type: nvarchar
+          - name: TIM09
+            data_type: char
+          - name: TPR09
+            data_type: decimal
+          - name: UNT09
+            data_type: nvarchar
+          - name: SPL09
+            data_type: char
+          - name: LGA09
+            data_type: nvarchar
+          - name: DRW09
+            data_type: nvarchar
+          - name: TIM10
+            data_type: char
+          - name: TPR10
+            data_type: decimal
+          - name: UNT10
+            data_type: nvarchar
+          - name: SPL10
+            data_type: char
+          - name: LGA10
+            data_type: nvarchar
+          - name: DRW10
+            data_type: nvarchar
+          - name: TIM11
+            data_type: char
+          - name: TPR11
+            data_type: decimal
+          - name: UNT11
+            data_type: nvarchar
+          - name: SPL11
+            data_type: char
+          - name: LGA11
+            data_type: nvarchar
+          - name: DRW11
+            data_type: nvarchar
+          - name: TIM12
+            data_type: char
+          - name: TPR12
+            data_type: decimal
+          - name: UNT12
+            data_type: nvarchar
+          - name: SPL12
+            data_type: char
+          - name: LGA12
+            data_type: nvarchar
+          - name: DRW12
+            data_type: nvarchar
+          - name: TIM13
+            data_type: char
+          - name: TPR13
+            data_type: decimal
+          - name: UNT13
+            data_type: nvarchar
+          - name: SPL13
+            data_type: char
+          - name: LGA13
+            data_type: nvarchar
+          - name: DRW13
+            data_type: nvarchar
+          - name: TIM14
+            data_type: char
+          - name: TPR14
+            data_type: decimal
+          - name: UNT14
+            data_type: nvarchar
+          - name: SPL14
+            data_type: char
+          - name: LGA14
+            data_type: nvarchar
+          - name: DRW14
+            data_type: nvarchar
+          - name: TIM15
+            data_type: char
+          - name: TPR15
+            data_type: decimal
+          - name: UNT15
+            data_type: nvarchar
+          - name: SPL15
+            data_type: char
+          - name: LGA15
+            data_type: nvarchar
+          - name: DRW15
+            data_type: nvarchar
+          - name: CYCLS
+            data_type: nvarchar
+          - name: TIMES
+            data_type: char
+          - name: OPERA
+            data_type: char
+          - name: GENER
+            data_type: char
+      - name: T554L
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: MOLGA
+            data_type: nvarchar
+          - name: KLBEW
+            data_type: nvarchar
+      - name: T554O
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: char
+          - name: MOLGA
+            data_type: nvarchar
+          - name: KLBEW
+            data_type: nvarchar
+          - name: TEXTS
+            data_type: nvarchar
+      - name: T554S
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: MOABW
+            data_type: nvarchar
+          - name: SUBTY
+            data_type: nvarchar
+          - name: ENDDA
+            data_type: nvarchar
+          - name: ENDDA_dato
+            data_type: date
+          - name: BEGDA
+            data_type: nvarchar
+          - name: BEGDA_dato
+            data_type: date
+          - name: D2OBL
+            data_type: char
+          - name: REABF
+            data_type: char
+          - name: REAEF
+            data_type: char
+          - name: REAZF
+            data_type: char
+          - name: MINTG
+            data_type: decimal
+          - name: MAXTG
+            data_type: decimal
+          - name: KLZBI
+            data_type: nvarchar
+          - name: KLBEW
+            data_type: nvarchar
+          - name: ABSTP
+            data_type: char
+          - name: ABKLA
+            data_type: nvarchar
+          - name: DUEVO
+            data_type: char
+          - name: DYNNR
+            data_type: nvarchar
+          - name: KTART
+            data_type: nvarchar
+          - name: RGMOD
+            data_type: nvarchar
+          - name: KLBDE
+            data_type: nvarchar
+          - name: KUNBZ
+            data_type: nvarchar
+          - name: ERGAB
+            data_type: char
+          - name: PCOPT
+            data_type: char
+          - name: STKRV
+            data_type: nvarchar
+          - name: STUND
+            data_type: nvarchar
+          - name: ART01
+            data_type: char
+          - name: URMAN
+            data_type: char
+          - name: ABWRG
+            data_type: char
+          - name: ABSTY
+            data_type: nvarchar
+          - name: VBLAK
+            data_type: nvarchar
+          - name: ABKND
+            data_type: char
+          - name: CLTIM
+            data_type: nvarchar
+          - name: MUNIT
+            data_type: char
+          - name: CRULE
+            data_type: nvarchar
+          - name: DEDQU
+            data_type: char
+          - name: AVAIL
+            data_type: char
+          - name: ENDCK
+            data_type: char
+          - name: LVCUT
+            data_type: char
+          - name: LVMIN
+            data_type: nvarchar
+          - name: LVMAX
+            data_type: nvarchar
+          - name: DEDOUTINT
+            data_type: char
+          - name: ACCNT
+            data_type: char
+          - name: ABSTYP_SHARED_CE
+            data_type: char
+      - name: T554T
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRSL
+            data_type: char
+          - name: MOABW
+            data_type: nchar
+          - name: AWART
+            data_type: nchar
+          - name: ATEXT
+            data_type: nchar
+      - name: T569V
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: ABKRS
+            data_type: nvarchar
+          - name: VWSAZ
+            data_type: nvarchar
+          - name: PABRJ
+            data_type: nvarchar
+          - name: PABRP
+            data_type: nvarchar
+          - name: STATE
+            data_type: char
+          - name: SRTFD
+            data_type: nvarchar
+          - name: UABRJ
+            data_type: nvarchar
+          - name: UABRP
+            data_type: nvarchar
+          - name: ADRUN
+            data_type: char
+      - name: T5A4O
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: SPRAS
+            data_type: char
+          - name: MOABW
+            data_type: nvarchar
+          - name: ABSTY
+            data_type: nvarchar
+          - name: TEXTS
+            data_type: nvarchar
+      - name: T5A4P
+        columns:
+          - name: ID
+            data_type: int
+          - name: TidspunktOpprettet
+            data_type: datetime2
+          - name: OpprettetAv
+            data_type: nvarchar
+          - name: TidspunktEndret
+            data_type: datetime2
+          - name: EndretAv
+            data_type: nvarchar
+          - name: MANDT
+            data_type: nvarchar
+          - name: MOABW
+            data_type: nvarchar
+          - name: ABSTY
+            data_type: nvarchar
+          - name: REFND
+            data_type: char
+      - name: T5V0P
+        columns: []
+      - name: T5V2A
+        columns: []
+      - name: T5V2G
+        columns: []
+      - name: T5V2K
+        columns: []
+      - name: T5V2L
+        columns: []
+      - name: T5V2M
+        columns: []
+      - name: T710ST
+        columns: []
+      - name: T777O
+        columns: []
+      - name: T777U
+        columns: []
+      - name: T777V
+        columns: []
+      - name: T778O
+        columns: []
+      - name: T778U
+        columns: []
+      - name: T778V
+        columns: []
+      - name: YHR_CTYP
+        columns: []
+      - name: YHR_P9024_LINJER
+        columns: []
+      - name: YHR_PSRCL
+        columns: []
+      - name: YHR_SVV_LOC
+        columns: []
+      - name: ZEAC_CONTR_PAY_D
+        columns: []
+      - name: ZEAC_CONTRA_DATA
+        columns: []
+      - name: ZEAC_KONTR_TYP_T
+        columns: []
+      - name: ZFHR_CO_AGENTS
+        columns: []
